@@ -200,9 +200,15 @@ h3
 	color: #444;
 }
 
+
+.fifth
+{
+	margin-top: 500px;
+}
+
 .sixth
 {
-	background-color: #111111;
+	background-color: white;
 	min-height: 360px;
 	margin: 0 -10px 0 -10px;
 }
@@ -222,5 +228,15 @@ h3
 	/*background-image: -ms-linear-gradient(left, black, white); IE
 	background-image: -o-linear-gradient(left, black, white); Opera*/
 	background-image: -linear-gradient(left, black, white);
+}
+.sixth h3
+{
+	height: 35px;
+	border: 1px solid #0000ff;
+	overflow: hidden;
+	background-color: #ccbbff;
+	background-image: -webkit-linear-gradient(90deg, rgb(12,0,36), rgb(148, 160,252), rgb(248, 160, 252));
+	background-image: -moz-linear-gradient(90deg, rgb(12,124,36), rgb(148, 160,252), rgb(248, 160, 252));
+	background-image: -linear-gradient(90deg, rgb(12,124,36), rgb(148, 160,252), rgb(248, 160, 252));
 }
 
