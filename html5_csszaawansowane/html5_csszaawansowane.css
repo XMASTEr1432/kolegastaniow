@@ -1,4 +1,4 @@
-﻿:root
+:root
 {
 	--bg-primary: #ffd;
 	--width-global: 960px;
@@ -130,5 +130,24 @@ h3
 .second-section article:hover
 {
 	color: #000;
+}
+
+.third article
+{
+	width: 291px;
+	min-height: 295px;
+	background-color: #4444ff;
+	position: relative;
+	float: left;
+	margin-right: 9px;
+	margin-left: 9px;
+	padding: 5px;
+	color: #000;
+	opacity: 0.5;
+}
+
+.third article:hover
+{
+	background-color: #4444ff; opacity: 1;
 }
 
