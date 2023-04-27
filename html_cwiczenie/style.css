@@ -1,0 +1,108 @@
+body
+{
+	background-color: pink;
+	font-family: Calibri;
+}
+div#main
+{
+	background-color: #ecc9f8;
+	width: 960px; 
+	height: 720px;
+	margin: auto;
+	display: flex;
+}
+
+div#left
+{
+	background-color: blue;
+	width: 150px;
+}
+div#center
+{
+	width: 660px;
+}
+div#right
+{
+	background-color: blue;
+	width: 150px;
+}
+
+
+img#logo
+{
+	z-index: 4;
+}
+img#banner
+{
+	position: absolute;
+	z-index: 3;
+	margin-left: ;
+	margin-right: ;
+}
+
+div#menu1
+{
+	width: auto;
+	background-color: purple;
+	height: 35px;
+	padding-top: 10px;
+}
+
+div#menu1 > a
+{
+	color: #f3a5a8;
+	text-align: center;
+	display: inline-block;
+	width: 188px;
+	text-decoration: none;
+}
+
+div#menu1 > a:hover
+{
+	color: purple;
+	font-size: 13pt;
+	text-decoration: underline;
+}
+
+div#menu1 > a
+{
+	border-right: 1px solid #f00;
+	border-color: pink;
+}
+
+div#menu1 > a:last-child
+{
+	border-right: 0px solid #f00;
+}
+
+h2.t
+{
+	color: blue;
+	text-align: center;
+}
+
+article.a
+{
+	background-color: purple; 
+	width: 300px; 
+	min-height: 160px; 
+	float: left;
+	padding: 10px;
+	text-align: justify;
+	font-size: 48px;
+	color: white;
+}
+
+div#menu2 > a
+{
+	color: red;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	width: 188px
+}
+
+article.b
+{
+	color: white;
+}

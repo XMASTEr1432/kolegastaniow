@@ -1,0 +1,107 @@
+body{
+	background-color: #ddf;
+}
+body > div {
+	background-color: #ffd;
+	width: 960px; 
+	height: 720px;
+	position: relative;
+	/*margin: auto;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+div > div
+{
+	background-color: #fee;
+	width: 200px;
+	height: 200px;
+}
+
+#second
+{
+	background-color: #fdd;
+}
+
+#second > #inner
+{
+	width: 100px;
+	height: 100px;
+	background-color: #fad;
+	position: absolute;
+	top: 50px;
+	right: 50px;
+}
+
+#third
+{
+	background-color: #fcc;
+	position: relative;
+	left: 200px;
+	top: 100px;
+}
+
+#fourth
+{
+	background-color: #fbb;
+}
+
+.abs
+{
+	background-color: #9ff;
+	width: 125px;
+	height: 125px;
+	position: absolute;
+}
+
+#abs1
+{
+	top:200px;
+	left: 500px;
+}
+
+#abs2
+{
+	top: 0;
+	left: 0;
+	z-index: 6;
+}
+
+#abs3
+{
+	top: 400px;
+	left: 0;
+}
+
+#abs4
+{
+	background-color: #f3f;
+	top: 10px;
+	left: 10px;
+	z-index: 5;
+}
+
+#one
+{
+	width: 100px;
+	height: 100px;
+	background-color: #ff9;
+	position: absolute;
+	top: 350px;
+	right: 250px;
+	border: 10px solid #999;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+#two
+{
+	width: 100px;
+	height: 100px;
+	background-color: #ff5;
+	position: absolute;
+	top: 450px;
+	right: 350px;
+	border: 10px solid #bbb;
+	box-sizing: content-box;
+	padding: 15px;
+}

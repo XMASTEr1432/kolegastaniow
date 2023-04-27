@@ -1,0 +1,119 @@
+ï»¿<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>html tabela</title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniaj¹cy zgodnoœæ ze starszymi wersjami przegl¹darki IE -->
+	<script>
+	document.createElement('header');
+	document.createElement('nav');
+	document.createElement('article');
+	document.createElement('footer');
+	document.createElement('section');
+	</script>
+	<style>
+	table
+	{
+		background-color:#a9dfaf;
+		width: 500px;
+		height: 400px;
+	}
+	tr,td
+	{
+		border: 1px solid #000000;
+	}
+	td.l
+	{
+		font-weight: bold;
+		text-align: center;
+	}
+	tr.a > td
+	{
+		background-color:#fbfe00;
+		font-weight: bold;
+	}
+	td.a
+	{
+		height:120px;
+		width:150px;
+	}
+	td.b
+	{
+		width: 50px;
+	}
+	td.r
+	{
+		background-color: red;
+	}
+	td.b
+	{
+		background-color: #00fbfe;
+	}
+	td.p
+	{
+		background-color: pink;
+	}
+	td.pu
+	{
+		background-color: purple;
+	}
+	td.g
+	{
+		background-color: #00a906;
+	}
+	</style>
+	
+</head>
+
+<body>
+	<table>
+		<tr>
+			<td colspan="5" class="l">SzerokoÅ›Ä‡ tabeli 500px wysokoÅ›Ä‡ 400px</td>
+		</tr>
+		<tr class="a">
+			<td class="a">Szer 150 Wys 120</td>
+			<td class="b">Szer 50</td>
+			<td colspan="3">Trzy</td>
+		</tr>
+		<tr>
+			<td rowspan="2">a</td>
+			<td colspan="2">b</td>
+			<td colspan="2">67</td>
+		</tr>
+		<tr>
+			<td colspan="2" class="r">2</td>
+			<td rowspan="3" colspan="2" class="b">4</td>
+		</tr>
+		<tr>
+			<td>3e</td>
+			<td class="p">4ereerr</td>
+			<td rowspan="3" class="g">4</td>
+		</tr>
+		<tr>
+			<td class="pu">qw</td>
+			<td>as</td>
+		</tr>
+		<tr>
+			<td>u8</td>
+			<td>4</td>
+			<td>3</td>
+		</tr>
+	
+	</table>
+	
+	
+	
+	
+	
+	
+	
+
+</body>
+
+</html>

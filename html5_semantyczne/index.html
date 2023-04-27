@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>HTML5 - Semantyczne</title>
+	
+	<link rel="stylesheet" href="semantyczne.css">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+	document.createElement('header');
+	document.createElement('nav');
+	document.createElement('article');
+	document.createElement('footer');
+	document.createElement('section');
+	</script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body>
+	<div>
+		<!-- nośnik treści strony -->
+		
+		<!--
+		<h1>Zastosowanie Box Model</h1>
+		<img id="logo" src="logo.png" alt="logo">
+		<img id="baner1" src="baner.png" alt="baner1">
+		<img id="baner2" src="baner2.png" alt="baner2">
+		
+		-->
+		<!--
+		<h1>Zastosowanie Box Model</h1>
+		<img id="logo" src="logo.png" alt="logo">
+		<img id="lubiepiwo" src="https://m.media-amazon.com/images/I/61XOxGSwgxS._AC_SL1500_.jpg" alt="logo">
+		-->
+		<header id="ssssssssssssssssssssssssssssssssssssssssssitetitle">
+				<h1>Zastosowanie Box Model</h1>
+			<figure>
+				<img id="logo" src="logo.png" alt="logo">
+			</figure>
+			<figure>
+				<img id="baner2" src="baner2.png" alt="baner2">
+			</figure>
+		</header>
+		<!-- treść strony - artykuły -->
+		<main>
+		<section>
+		<article class="art">
+			<h4>
+			Ala ma kota
+			</h4>
+			<div>
+			<img class="obrazaw" src="kaol.jpg" alt="Obrazek jeden">
+			</div>
+			twoja kochana mamusia ma ale
+			twoja kochana mamusia ma ale
+			twoja kochana mamusia ma ale
+			twoja kochana mamusia ma ale
+			twoja kochana mamusia ma ale
+			twoja kochana mamusia ma ale
+			
+			<aside>Jan Kowalski - <time datetime="2024-02-30T:21:37+00:01">30 luty 2024</time></aside>
+		</article>
+		</section>
+		
+		<section>
+		<article class="art">
+			<h4>
+			Ala ma psa
+			</h4>
+			nazywa się bruno
+			nazywa się bruno
+			nazywa się bruno
+			nazywa się bruno
+			nazywa się bruno
+			nazywa się bruno
+			<br>
+			<span class="nineeleven">(2977 ofiar + 19 terrorystów)</span>
+			<aside>Jan Kowalski - <time datetime="2001-09-11T:08:46+00:01">11 wrzesień 2001</time></aside>
+		</article>
+		</section>
+		
+		<section>
+		<article class="art">
+			<h4>
+			To tylko sen
+			</h4>
+			<div class="wake-up">
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ 
+				OBUDŹ SIĘ
+			</div>
+			
+			<aside>Jan Kowalski - <time datetime="2024-02-30T:21:37+00:01">30 luty 2024</time></aside>
+		</article>
+		</section>
+		</main>
+		<table>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td class="narrow">q</td>
+				<td>w</td>
+				<td>e</td>
+				<td collspan="2">r</td>
+				<td>a</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>q</td>
+				<td rowspan="2">w</td>
+				<td>e</td>
+				<td>r</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+			</tr>
+		</table>
+		<h5>
+		Menu 1
+		</h5>
+		<menu class="menu">
+			<a href="#">Strona 1</a>
+			<a href="#">Strona 2</a>
+			<a href="#">Strona 3</a>
+			<a href="#">Strona 4</a>
+			<a href="#">Strona 5</a>
+		</menu>
+		<h5>
+		Menu 2
+		</h5>
+		<menu class="menu2">
+			<a href="#">Strona 11</a>
+			<a href="#">Strona 12</a>
+			<a href="#">Strona 13</a>
+			<a href="#">Strona 14</a>
+			<a href="#">Strona 15</a>
+		</menu>
+		
+		
+		
+	</div>
+</body>
+
+</html>
