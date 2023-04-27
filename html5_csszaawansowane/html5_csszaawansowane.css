@@ -1,4 +1,4 @@
-:root
+﻿:root
 {
 	--bg-primary: #ffd;
 	--width-global: 960px;
@@ -42,6 +42,20 @@ section
 	min-height: 360px;
 }
 
+/*
+section
+{
+	min-height: 360px;
+	margin: 0 -10px 0 -10px;
+}
+section:nth-child(even albo odd albo inna opcja)
+{
+	min-height: 360px; margin: 0 -10px 0 -10px;
+	background-color: ; <---(dla innego czy coś)
+}
+*/
+
+	
 
 /* Primary horizontal navigation */
 .primary-nav-horizontal
@@ -131,7 +145,7 @@ h3
 {
 	color: #000;
 }
-
+/* third section */
 .third article
 {
 	width: 291px;
@@ -149,5 +163,64 @@ h3
 .third article:hover
 {
 	background-color: #4444ff; opacity: 1;
+}
+
+/* fourth section */
+
+.fourth
+{
+	background-color: #ccddff;
+	height: 360px;
+	margin: 0 -10px 0 -10px;
+}
+
+.fourth article
+{
+	width: 182px;
+	height: 142px;
+	_background-color: #4444ff99;
+	position: relative;
+	float: left;
+	padding: 5px;
+}
+
+.fourth article:nth-child(even) 
+{
+	background-color: #123456;
+	color: #fff;
+}
+.fourth article:nth-child(odd)
+{
+	background-color: #abcdef;
+	color: #444;
+}
+.fourth article:nth-child(7)
+{
+	background-color: #fff;
+	color: #444;
+}
+
+.sixth
+{
+	background-color: #111111;
+	min-height: 360px;
+	margin: 0 -10px 0 -10px;
+}
+
+.sixth article
+{
+	width: 30%;
+	height: 160px;
+	float: right;
+	margin-right: 9px;
+	margin-left: 9px;
+	padding: 5px;
+	color: #000;
+	background-color: #44ffaa;
+	background-image: -webkit-linear-gradient(left, black, white);
+	background-image: -moz-linear-gradient(left, black, white);
+	/*background-image: -ms-linear-gradient(left, black, white); IE
+	background-image: -o-linear-gradient(left, black, white); Opera*/
+	background-image: -linear-gradient(left, black, white);
 }
 
