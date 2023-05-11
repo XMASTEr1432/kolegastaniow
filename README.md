@@ -1,1 +1,3 @@
 # kolegastaniow
+
+jebac go
