@@ -208,7 +208,7 @@ h3
 
 .sixth
 {
-	background-color: white;
+	background-color: #79f;
 	min-height: 360px;
 	margin: 0 -10px 0 -10px;
 }
@@ -216,7 +216,7 @@ h3
 .sixth article
 {
 	width: 30%;
-	height: 160px;
+	min-height: 160px;
 	float: right;
 	margin-right: 9px;
 	margin-left: 9px;
@@ -229,7 +229,7 @@ h3
 	background-image: -o-linear-gradient(left, black, white); Opera*/
 	background-image: -linear-gradient(left, black, white);
 }
-.sixth h3
+.sixth h4
 {
 	height: 35px;
 	border: 1px solid #0000ff;
@@ -239,4 +239,43 @@ h3
 	background-image: -moz-linear-gradient(90deg, rgb(12,124,36), rgb(148, 160,252), rgb(248, 160, 252));
 	background-image: -linear-gradient(90deg, rgb(12,124,36), rgb(148, 160,252), rgb(248, 160, 252));
 }
+
+.sixth span
+{
+	display: block;
+	height: 95px;
+	overflow: hidden;
+	background-color: #3b9afe;
+	background-image: -webkit-linear-gradient(225deg, green 5%, yellow 10%);
+	background-image: -linear-gradient(225deg, green 5%, yellow 50%);
+}
+
+.sixth p
+{
+	margin: 10px 0 0 0;
+	height: 75px;
+	width: 480px;
+	float: left;
+	background-color: #de56ed;
+	background-image: -webkit-repeating-linear-gradient(225deg, green 5%, yellow 10%);
+	background-image: -linear-repeating-gradient(225deg, green 5%, yellow 50%);
+}
+
+.sixth p:last-of-type
+{
+	background-image: -webkit-repeating-linear-gradient(225deg, green 0px, green 10px, yellow 10px, yellow 20px, blue 20px, blue 30px);
+	background-image: -repeating-linear-gradient(225deg, green 0px, green 10px, yellow 10px, yellow 20px, blue 20px, blue 30px);
+}
+
+.sixth div.graduent
+{
+	margin: 10px 0 0 0;
+	height: 750px;
+	width: 960px;
+	float: right;
+	background-color: #ff56ed;
+	background-image: -webkit-repeating-radial-gradient(circle, black 0px, black 10px, white 10px, white 20px, black 20px, black 30px);
+	background-image: -repeating-radial-gradient(circle, black 0px, black 10px, white 10px, white 20px, black 20px, black 30px);
+}
+
 
