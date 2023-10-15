@@ -1,0 +1,393 @@
+
+/*niebieski - #5455ff, zielony - #55ff56, border - #f1fdf4, beżowy - #ffffcd*/
+body 
+{
+background-color: #ffffcd;
+}
+
+div.base 
+{
+width:960px; 
+margin: auto; 
+position: relative;
+}
+
+h2 
+{
+    animation-name: imie;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    z-index: 11;
+}
+
+.gradient, .gradient2, .gradient3, .gradient4
+{
+    z-index: 11;
+}
+
+.gradient
+{
+width: 215px; 
+padding-top: 20px; 
+margin-bottom: 5px; 
+margin-top: 0px;
+background-image: -webkit-linear-gradient(lime ,blue);
+background-image: -moz-linear-gradient(lime ,blue);
+background-image: -linear-gradient(lime ,blue);
+} 
+
+.gradient2 
+{
+width: 160px; 
+padding-top: 20px; 
+margin-bottom: 5px; 
+margin-top: 0px;
+background-image: -webkit-linear-gradient(lime ,blue);
+background-image: -moz-linear-gradient(lime ,blue);
+background-image: -linear-gradient(lime ,blue);
+}   
+
+.gradient3 
+{
+width: 230px; 
+padding-top: 20px; 
+margin-bottom: 5px; 
+margin-top: 0px;
+background-image: -webkit-linear-gradient(lime ,blue);
+background-image: -moz-linear-gradient(lime ,blue);
+background-image: -linear-gradient(lime ,blue);
+}  
+
+.gradient4 
+{
+width: 165px; 
+padding-top: 20px; 
+margin-bottom: 5px; 
+margin-top: 0px;
+background-image: -webkit-linear-gradient(lime ,blue);
+background-image: -moz-linear-gradient(lime ,blue);
+background-image: -linear-gradient(lime ,blue);
+}  
+
+h1
+{
+position: absolute; 
+top: -1000px;
+}
+
+article
+{
+    animation-name: kolorki;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+img.duze
+{
+    transition: transform 2s;
+    position: absolute;
+    z-index: 11;
+}
+
+img.duze:hover
+{
+    transform: scale(2);
+}
+
+img.male
+{
+    transition: transform 2s;
+    position: absolute;
+    z-index: 11;
+}
+
+img.male:hover
+{
+    transform: scale(2);
+}
+
+.zero
+{
+margin: -4px;
+}
+
+
+header > div > img
+{
+position: relative; 
+top: 0px; 
+margin: -10px 0px 0px -5px;
+}
+ 
+
+.Maria 
+{
+background-color: #55ff56; 
+min-height: 380px; 
+margin: 0px -10px 0px -20px;
+}
+
+.horiz 
+{
+width: 960px; 
+position: absolute; 
+margin-top: -30px; 
+margin-left: 275px; 
+}
+
+.horiz > a 
+{
+display: block; 
+float: left; 
+width: 135px; 
+margin: auto; 
+border: 1px solid #f1fdf4;
+padding-top: 7px;
+}
+
+.Maria article 
+{
+width: 290px; 
+height: 295px; 
+background-color: #5455ff; 
+position: relative; 
+float: left; 
+margin-right: 10px; 
+margin-left: 10px; 
+margin-top: 15px; 
+padding: 5px;
+}
+
+
+.Stopka 
+{
+margin-top: 10px;
+}
+.text1 
+{
+text-align: right;
+}
+
+
+img.male
+{
+width : 65px;
+height : 100px;
+margin : -20px 0 0 110px;
+}
+
+.Stopka2 
+{
+margin-top: 110px;
+}
+ 
+article 
+{
+text-align: justify;
+} 
+
+.tytuł 
+{
+text-align: center; 
+margin-top: 5px;
+}
+ 
+.Julian 
+{
+min-height: 360px; 
+margin-left: -20px;
+}
+.Julian article 
+{
+width: 291px; 
+height: 295px; 
+background-color: #5455ff; 
+position: relative; 
+float: left; 
+margin-right: 10px; 
+margin-left: 9px; 
+padding: 5px;
+}
+
+.horiz2 
+{
+width: 960px; 
+position: absolute; 
+margin-top: -40px; 
+margin-left: 275px; 
+}
+
+.horiz2 > a 
+{
+display: block; 
+float: left; 
+width: 135px; 
+margin: auto; 
+border: 1px solid #f1fdf4; 
+padding-top: 7px;
+}
+
+.Stopka3 
+{
+margin-top: 25px;
+}
+
+.Stopka4 
+{
+margin-top: 40px;
+}
+
+.Stanisław 
+{
+background-color: #5455ff ; 
+min-height: 720px; 
+margin: 0 -10px 0 -10px;
+}
+
+.horiz3 
+{
+width: 960px; 
+position: absolute; 
+margin-top: -40px; 
+margin-left: 275px; 
+}
+
+.horiz3 > a 
+{
+display: block; 
+float: left; 
+width: 135px; 
+margin: auto; 
+border: 1px solid #f1fdf4; 
+padding-top: 7px;
+}
+
+.Artykuł1 
+{
+width: 220px; 
+height: 295px; 
+background-color: #55ff56; 
+position: relative; 
+float: left; 
+margin-right: 0px;
+margin-left: 10px; 
+margin-bottom: 20px; 
+padding: 5px;
+}
+
+img.duze
+{ 
+width: 200px; 
+height: 230px; 
+margin-left: 10px;
+}
+
+
+.Artykuł2 
+{
+width: 220px; 
+height: 295px; 
+background-color: #55ff56; 
+position: relative; 
+float: left; 
+margin-right: 0px; 
+margin-left: 0px; 
+margin-bottom: 20px; 
+padding: 5px;
+}
+
+.Artykuł3 
+{
+width: 220px; 
+height: 295px; 
+background-color: #55ff56; 
+position: relative; 
+float: left; 
+margin-right: 0px; 
+margin-left: 20px; 
+margin-bottom: 20px; 
+padding: 5px;
+}
+
+
+.Stopka5 
+{
+margin-top:145px;
+}
+
+.Stopka6 
+{
+margin-top:20px;
+}
+
+.Jan 
+{
+min-height: 360px; 
+margin-left: -20px;
+}
+
+.Jan article 
+{
+width: 290px; 
+height: 295px; 
+background-color: lightyellow; 
+position: relative; 
+float: left; 
+margin-right: 10px; 
+margin-left: 9px; 
+padding: 5px;
+}
+
+.horiz4 
+{
+width: 960px; 
+position: absolute; 
+margin-top: -40px; 
+margin-left: 275px; 
+}
+
+.horiz4 > a 
+{
+display: block; 
+float: left; 
+width: 135px; 
+margin: auto; 
+border: 1px solid #f1fdf4;
+padding-top: 7px; 
+background-color: lightgreen;
+}
+
+/* animacje */
+@keyframes imie {
+    0%
+    {
+        margin-left: 0%;
+    }
+    50%
+    {
+        margin-left: 75%;
+    }
+    100%
+    {
+        margin-left: 0%;
+    }
+}
+@keyframes kolorki {
+    0%
+    {
+        background-color: #ffffcd;
+    }
+    50%
+    {
+        background-color: #55ff56;
+    }
+    80%
+    {
+        background-color: #5455ff;
+    }
+    100%
+    {
+        background-color: #ffffcd;
+    }
+}
+
