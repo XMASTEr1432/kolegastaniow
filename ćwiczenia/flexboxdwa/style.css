@@ -1,0 +1,102 @@
+body
+{
+    background-color: lightskyblue;
+}
+
+div#main
+{
+    border: 1px solid lightskyblue;
+    border-radius: 1%;
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: lightblue;
+}
+
+div#nav
+{
+    background-color: azure;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div#nav > a 
+{
+    display: block;
+    width: 160px;
+    background-color: lavenderblush;
+}
+
+#boxes2
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: dodgerblue;
+}
+
+#boxes2 > div
+{
+    background-color: ghostwhite;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#boxes3
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: moccasin;
+}
+
+#boxes3 > div
+{
+    background-color: rgb(255, 250, 242);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#boxes4
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: dodgerblue;
+}
+
+#boxes4 > div
+{
+    background-color: ghostwhite;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#boxes5
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: moccasin;
+}
+
+#boxes5 > div
+{
+    background-color: rgb(255, 250, 242);
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}

@@ -1,0 +1,193 @@
+﻿html
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body
+{
+    height: 920px;
+    width: 1260px;
+    margin: 0 auto;
+}
+
+header.title
+{
+    min-height: 150px;
+}
+
+
+header > section,img
+{
+    float: left;
+}
+
+header > section.title
+{
+    background-image: url("tytu.png");
+    height: 120px;
+    width: 650px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 155px;
+}
+
+header > section.title > h1
+{
+    color: orange;
+    text-align: center;
+    font-size: 45px;
+    font-family: "consolas";
+}
+
+img.logo
+{
+    min-width: 150px;
+}
+
+header > section.logowanie
+{
+    min-width: 150px;
+    border-style: solid;
+    border-width: 0px;
+    border-color: lightgreen;
+    background-color: lightgreen;
+    font-family: "consolas";
+    text-align: center;
+    margin-left: 155px;
+}
+
+header > section.logowanie:hover
+{
+    background-color: rgb(173, 235, 173);
+    color: white;
+}
+
+section,main
+{
+    float: left;
+}
+
+section.left, section.right
+{
+    width: 150px;
+    height: 720px;
+    background-color: lightblue;
+}
+
+section.left > nav > a
+{
+    text-decoration: none;
+    margin-left: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: green;
+    text-align: center;
+}
+
+section.left > nav > a:hover
+{
+    text-decoration: underline;
+    text-decoration-color: green;
+    color: green;
+}
+
+main
+{
+    width: 960px;
+    height: 720px;
+    background-color: aliceblue;
+}
+
+main > article
+{
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(255, 221, 158);
+}
+
+article.j
+{
+    width: 310px;
+    height: 300px;
+    text-align: right;
+}
+
+article.j > img
+{
+    max-width: 150px;
+    height: fit-content;
+}
+
+article.d
+{
+    width: 630px;
+    height: 300px;
+    text-align: left;
+}
+
+article.d > img
+{
+    float: right;
+    max-width: 150px;
+    height: fit-content;
+
+}
+
+article.t
+{
+    width: 950px;
+    height: 325px;
+}
+
+p#a
+{
+    text-align: left;
+    float: left;
+    position: relative;
+    width: 310px;
+}
+p#b
+{
+    text-align: right;
+    float: right;
+    position: relative;
+    width: 310px;
+}
+
+article.t  > img
+{
+    height: 50px;
+    float: left;
+    width: 310px;
+}
+
+
+
+h3
+{
+    margin-left: 1px;
+    color: red;
+
+}
+
+section.right > nav.menuduze > a > img
+{
+    width: 150px;
+    max-height: 180px;
+}
+
+footer
+{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: coral;
+    text-align: center;
+}
+
+footer > img
+{
+    position: relative;
+}

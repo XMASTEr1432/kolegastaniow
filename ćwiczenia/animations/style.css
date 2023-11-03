@@ -1,0 +1,210 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 15%;
+    background-color: rgb(29, 29, 29);
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+a:hover
+{
+    color: palevioletred;
+    text-decoration: none;
+}
+
+a > h1
+{
+    font-size: 20pt;
+    margin-top: -20px;
+}
+
+header{
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    font-family: consolas;
+    font-size: 20pt;
+    margin-top: -1.2%;
+    margin-left: -15%;
+    width: none;
+}
+
+div.przerwa
+{
+    margin-top: 200px;
+}
+section > div
+{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    margin-top: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32pt;
+    color: white;
+    text-align: center;
+}
+
+
+div#jeden
+{
+    animation-name: jeden;
+}
+
+div#dwa
+{
+    animation-name: dwa;
+}
+
+div#trzy{
+    animation-name: dupacycewadowice;
+    animation-delay: 2s;
+}
+
+div#cztery{
+    animation-name: dupacycewadowice;
+    animation-delay: -1s;
+}
+
+section#trzy > div
+{
+    width: 200px;
+    height: 200px;
+}
+
+section#trzy > p
+{
+    font-size: 32pt;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+div#odta{
+    animation-name: odt;
+    animation-direction: reverse;
+}
+
+div#odtb{
+    animation-name: odt;
+    animation-direction: alternate;
+}
+
+div#odtc{
+    animation-name: odt;
+    animation-direction: alternate-reverse;
+}
+
+section#cztery > div {
+    animation-iteration-count: 1;
+    width: 200px;
+    height: 200px;
+}
+
+div#cztery{
+    animation-name: cztery;
+    animation-fill-mode: forwards;
+}
+
+div#piec{
+    animation-name: cztery;
+    animation-fill-mode: backwards;
+}
+
+div#szesc{
+    animation-name: cztery;
+    animation-fill-mode: both;
+}
+
+@keyframes jeden
+{
+    from {
+        background-color: blue;
+    }
+    to {
+        background-color: blueviolet;
+    }
+}
+
+@keyframes dwa
+{
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+
+    25% {
+        background-color: lightblue;
+    }
+    50% {
+        background-color: violet;
+        margin-left: 100px;
+    }
+    75%
+    {
+        background-color: blueviolet;
+    }
+    100%
+    {
+        background-color: blue;
+        margin-left: 0px;
+    }
+
+}
+
+@keyframes dupacycewadowice
+{
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    50% {
+        background-color: lavender;
+        margin-left: 100px;
+    }
+    100%
+    {
+        background-color: blue;
+        margin-left: 0px;
+    }
+
+}
+
+@keyframes odt
+{
+    0% {
+        background-color: red;
+        margin-left: 0px;
+    }
+    50% {
+        background-color: green;
+        margin-left: 100px;
+    }
+    100%
+    {
+        background-color: blue;
+        margin-left: 0px;
+    }
+
+}
+
+
+@keyframes cztery
+{
+    0% {
+        background-color: blue;
+        margin-left: 0px;
+    }
+    100% {
+        background-color: violet;
+        margin-left: 100px;
+    }
+
+}

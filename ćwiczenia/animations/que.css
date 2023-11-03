@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+}
+
+div{
+    background-color: white;
+    width: 0px;
+    height: 0px;
+    animation: klocek 10s ease 0s 1 normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes klocek {
+    from {
+        width: 0;
+        height: 0;
+    }
+    to{
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,0 +1,131 @@
+body
+{
+    background-color: lavender;
+}
+
+div#main
+{
+    border: 1px solid rgb(219, 219, 252);
+    border-radius: 0.5%;
+    margin: 0 auto;
+    max-width: 960px;
+    background-color: aliceblue;
+
+}
+
+div#nav
+{
+    background-color: azure;
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+div#nav > a 
+{
+    display: block;
+    width: 160px;
+    background-color: lavenderblush;
+}
+
+div#content
+{
+    min-height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+}
+article
+{
+    min-width: 320px;
+    height: 320px;
+    background-color: lightpink;
+}
+
+div#gallery
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin: auto;
+    justify-content: space-between;
+}
+
+img {
+    margin: 1em;
+    width: 200px;
+    height: 150px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+div#foot
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+aside
+{
+    flex:auto;
+}
+
+nav#last
+{
+flex:auto;
+background-color: beige;
+}
+
+nav#last > a
+{
+    display: inline-block;
+    width: 320px;
+    background-color: antiquewhite;
+}
+
+p {
+    flex: auto;
+}
+
+#last
+{
+    display: flex;
+    flex-wrap: wrap;
+    background-color:linen;
+}
+#middle
+{
+    flex: 3;
+    background-color: cornsilk;   
+}
+#sidebar
+{
+    flex: 7;
+    background-color: mintcream;
+}
+#header, #footer
+{
+    flex: 1 100%;
+    background-color: moccasin;
+}
+
+/*-------------------- kto by to wiedział --------------------*/
+
+p#kto_by_to_wiedział
+{
+    font-weight: bolder; 
+    font-style: italic;
+}
+
+p#kto_by_to_wiedział::after
+{
+    content: "”";
+    font-weight: bolder; 
+    font-style: italic;
+}
+
+p#kto_by_to_wiedział::before
+{
+    content: "„";
+    font-weight: bolder; 
+    font-style: italic;
+}

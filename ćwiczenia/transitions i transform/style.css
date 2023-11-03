@@ -1,0 +1,181 @@
+body
+{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    /* Nadanie koloru wokół tekstu */
+}
+
+section > div
+{
+    height: 100px;
+    width: 100px;
+    background-color: aquamarine;
+    margin-top: 5%;
+    margin-left: 45%;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_EAS4DxYal9LdsARrr-cnUCarxXBq8YVEsn_ciaBc0CNROOF58kpqZh_epF0wbSKA&usqp=CAU);
+}
+
+
+
+h1
+{
+    text-align: center;
+}
+
+/* 2D transforms */
+
+div.translate:hover
+{
+    transform: translate(50px, 100px);
+    /* element 50 pixels to the right, and 100 pixels down */
+}
+
+div.rotate:hover
+{
+    transform: rotate(180deg);
+}
+
+div.scale:hover
+{
+    transform: scale(2, 2);
+    /* two times of its original width, and two times of its original height */
+}
+
+div.scalex:hover
+{
+    transform: scaleX(2);
+}
+
+div.scaley:hover
+{
+    transform: scaleY(2);
+}
+div.skewx:hover
+{
+    transform: skewX(20deg);
+}
+div.skewy:hover
+{
+    transform: skewY(20deg);
+}
+div.skew:hover
+{
+    transform: skew(20deg, 10deg);
+    /* skews the <div> element 20 degrees along the X-axis, and 10 degrees along the Y-axis: */
+}
+div.martrix:hover
+{
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+    /* The matrix() method take six parameters which allows you to rotate, scale, move (translate), and skew elements. 
+    The parameters are as follow: matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+}
+
+/* 3D transforms */
+
+div.rotatex:hover
+{
+    transform: rotateX(150deg);
+}
+
+div.rotatey:hover
+{
+    transform: rotateY(150deg);
+}
+
+div.rotatez:hover
+{
+    transform: rotateZ(90deg);
+}
+
+/* transitions */
+
+div.transjed
+{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    transition: width /*, height */ 0.4s;
+    background-image: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0px;
+    -webkit-text-stroke-width: 0px;
+}
+
+section.trans > div.transjed > p
+{
+    margin-left: 130px;
+    user-select: none;
+}
+
+div.transjed:hover
+{
+    /*
+    height: 200px;
+    */
+    width: 300px;
+}
+
+div.transjed:hover
+{
+    font-size: 72px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+
+div.transdwa
+{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    transition: width /*, height */ 0.4s;
+    transition-delay: 0.5s;
+    background-image: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0px;
+    -webkit-text-stroke-width: 0px;
+}
+
+section.trans > div.transdwa > p
+{
+    margin-left: 130px;
+    user-select: none;
+}
+
+
+div.transdwa:hover
+{
+    /*
+    height: 200px;
+    */
+    width: 300px;
+}
+
+div.transdwa:hover
+{
+    font-size: 72px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+/*transformers*/
+
+div.Transformers
+{
+    transition: width 2s, height 2s, transform 0.5s;
+    background-image: url("https://pbs.twimg.com/profile_images/1703838994599903232/RkhcVZFW_400x400.jpg");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    height: 300px;
+    width: 300px;
+}
+
+div.Transformers:hover
+{
+    transform: rotateY(180deg);
+    transform: rotateX(20deg);
+    height: 500px;
+    width: 500px;
+}
