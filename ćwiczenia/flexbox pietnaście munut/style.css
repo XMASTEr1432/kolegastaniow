@@ -1,0 +1,39 @@
+body
+{
+    background-color: black;
+}
+
+#klocuch {
+    display: flex;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#klocuch > div
+{
+    background-color: #f1f1f1;
+    color: white;
+    width: 100px;
+    height: 100px;
+    animation-name: klocek;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    margin-top: 25%;
+}
+
+@keyframes klocek {
+    0%   {width: 100px; height: 100px;}
+    99% {width: 10000vw; height: 10000vw;}
+    100% 
+    {
+        background-image: url("balonowy_chlopiec.png");
+        width: 1007px;
+        height: 400px;
+        background-repeat: no-repeat;
+    }
+  }
+
+
