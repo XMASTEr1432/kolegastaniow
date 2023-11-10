@@ -1,0 +1,45 @@
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #ccf;
+    color: yellow;
+}
+
+* 
+{
+box-sizing: border-box;
+}
+
+.topnav 
+{
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a
+{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topnav a:hover
+{
+    background-color: white;
+    color: black;
+}
+
+/* zmiana tła a przy szerokości 600px */
+
+@media screen and (max-width:600px) {
+    .topnav a
+    {
+        float: none;
+        width: 100%;
+        background-color: yellow;
+        color: black;
+    }
+}
