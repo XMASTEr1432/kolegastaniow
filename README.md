@@ -1,3 +1,3 @@
 # kolegastaniow
 
-jebac go
+😊😊😊😊👍👍👍
