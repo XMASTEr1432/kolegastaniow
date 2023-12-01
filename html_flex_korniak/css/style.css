@@ -1,0 +1,163 @@
+body
+{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #3e3131;
+    background-image: url('https://i.pinimg.com/originals/55/da/c7/55dac724a4fa886a05253c6956ba1436.gif');
+}
+
+main
+{
+    display: flexbox;
+    justify-content: center;
+    background-color: green;
+}
+
+#title
+{
+    width: 100%;
+    height: 5vw;
+    background-image: url(../obrazy/chrysanthemum.jpg);
+}
+img#ll
+{
+    width: 20%;
+    position: relative;
+    float: left;
+    height: 5vw;
+    margin-left: -2.5%;
+
+}
+h1
+{
+    width: 75%;
+    float: left;
+    position: relative;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
+    letter-spacing: 25px;
+    color: white;
+}
+
+section#l, section#p
+{
+    width: 25%;
+    float: left;
+    background-color: burlywood;
+    min-height: 40vw;
+
+}
+/*
+#l, #p, #mid, #b
+{
+    justify-content: center;
+    display: flex;
+}
+*/
+
+section#art
+{
+    float: left;
+    width: 100%;
+    display: flex;
+    background-color: #633b3b;
+}
+
+
+figcaption.hid
+{
+    visibility: hidden;
+}
+
+
+nav, a
+{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+#b
+{
+    width: 100%;
+}
+
+
+#pt
+{
+    width: 100%;
+    background-color: green;
+    height: 10vw;
+    margin-top: -7.25%;
+    text-align: center;
+}
+
+h2
+{
+    color: lightgreen;
+    font-size: 60pt;
+}
+
+article
+{
+    width: 100%;
+    float: left;
+    background-color: brown;
+    height: 30vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#arti
+{
+    width: 100%;
+}
+
+#mid
+{
+    width: 50%;
+    float: left;
+}
+
+
+img.ggal
+{
+    width: 25%;
+    height: 6vw;
+    transition: 0.5s;
+}
+img.ggal:hover
+{
+    width: 50%;
+    height: 10vw;
+}
+
+img.gal
+{
+    width: 35%;
+    height: 6vw;
+    transition: 0.5s;
+    float: left;
+}
+img.gal:hover
+{
+    width: 50%;
+    height: 7.5vw;
+}
+
+a
+{
+    color: aliceblue;
+    text-decoration: none;
+}
+a:hover
+{
+    color: greenyellow;
+    text-decoration: solid;
+}
+figcaption.opis
+{
+    float: right;
+    font-size: 45pt;
+}
