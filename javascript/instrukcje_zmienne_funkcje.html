@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Instrukcje, zmienne, funkcje</title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-size: 24pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+	<script src=""></script>
+</head>
+
+<body>
+	
+    <h1>Składnia i struktura programu</h1>
+    <h3>Instrukcja</h3>
+    <script>
+        document.write("<b>Fragment kodu wykonujacy jakieś działanie - na ogół zakończony znakiem \";\" (średnik)</b>");
+        document.write("<br>");
+        document.write("!false;");
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>Zmienne</h3>
+    <script>
+        document.write("Konstrukcja programu służąca do przechowywania wartości");
+        document.write("<br>");
+        let zmienna;
+        let zmienna2 = 5;
+        let zmienna_3 = 5+5;
+        document.write(zmienna);
+        document.write("<br>");
+        document.write(zmienna2);
+        document.write("<br>");
+        document.write(zmienna_3 + zmienna2);
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        let zmienna999;
+        zmienna999 = 5;
+        let zmienna333 = 5 + 5;
+        document.write(zmienna999);
+        document.write("<br>");
+        document.write(zmienna333);
+        document.write("<br>");
+        zmienna999 = "Ala tiene un gato";
+        document.write(zmienna999);
+        document.write("<br>");
+        zmienna999 = 123;
+        document.write(zmienna999 + "<br>");
+        let zmienna11 = 45, zmeinna12 = 54;
+        document.write(zmienna11 + zmeinna12);
+        document.write("<hr>");
+
+
+        let zmienna7 = String(5) + Boolean(5);
+        document.write(zmienna7);
+        document.write("<br>");
+        document.write(typeof(zmienna7));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>Słowa kluczowe i zarezerwowane</h3>
+    <a href="https://pl.wikibooks.org/wiki/JavaScript/S%C5%82owa_zarezerwowane">Słowa zarezerwowane/zastrzeżone</a>
+    <hr>
+    <h3>
+        Funkcja
+    </h3>
+    <script>
+        document.write("<b>Fragment programu generujący oczekiwaną wartość, mogący istnieć samodzielnie, w wielu miejscach i wielokrotnie może być powtarzany. Wywoływany jest za pomocą polecenia </b>");
+        document.write("<br>");
+        
+        function czarnuch()
+        {
+            document.write("to jest przykładowa funkcja 😎😎😎😎")
+            document.write("<br>");
+        }
+        czarnuch();
+        czarnuch();
+        czarnuch();
+        document.write("<br>");
+    </script>
+
+    <script>
+        czarnuch();
+    </script>
+    <hr>
+</html>

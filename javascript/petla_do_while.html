@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+	<script src=""></script>
+</head>
+
+<body>
+	<h1>
+        Instrukcje sterujące - pętla <i>do... while...</i>
+    </h1>
+    <script>
+        let zmienna = 5;
+        let licznik = 0;
+
+        do
+        {
+            document.write(zmienna + "<br>");
+            licznik++;
+        }
+        while
+            (licznik < 0);
+    </script>
+    <hr>
+    <script>
+        let zmienna2 = prompt("Wpisz jakąś liczbę: ", "");
+        let licznik2 = 0;
+        do
+        {
+            document.write(zmienna2*licznik2++ + "<br>");
+        }
+        while
+            (licznik2 <=5);
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        do
+        {
+            var name = prompt("Var Podaj swoje imie", "");
+        }
+        while
+            (!name); //nie pozwala na dalsze działanie skryptu bez wpisania czegoś - wersja uproszczona
+        document.write(name);
+        document.write("<br>");
+    </script>
+</body>
+
+</html>

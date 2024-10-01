@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+	<script src=""></script>
+</head>
+
+<body>
+	<h1>
+        Składnia i struktura programu
+    </h1>
+    <h3>
+        Funkcje predefiniowane (globalne)
+    </h3>
+
+    <script>
+        document.write("<b>Standardowe funkcje języka, których działanie zostało określone i zapisane w strukturze w postaci poleceń</b>" + "<br>");
+        document.write("Nie są wywoływane oddzielnymi poleceniami");
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        document.write("eval");
+        document.write("<br>");
+        document.write("isFinite");
+        document.write("<br>");
+        document.write("isNaN");
+        document.write("<br>");
+        document.write("parseInt");
+        document.write("<br>");
+        document.write("parseFloat");
+        document.write("<br>");
+        document.write("Number");
+        document.write("<br>");
+        document.write("String");
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        Eval
+    </h3>
+    <script>
+        document.write(("2+2")); //zwraca 2+2
+        document.write("<br>");
+        document.write(eval("3+3")); //zwraca 6
+        document.write("<br>");
+        document.write(eval(new String("2+2"))); //zwraca 2+2
+        document.write("<br>");
+        document.write(eval(new String(2+2))); //zwraca 4
+        document.write("<br>");
+        document.write(typeof(eval(new String(2+2))));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        isFinite
+    </h3>
+    <script>
+        document.write(isFinite(0xff));
+        document.write("<br>");
+        document.write(isFinite(Math.PI));
+        document.write("<br>");
+        document.write(isFinite("ala ma kota"));
+        document.write("<br>");
+        document.write(isFinite(Infinity));
+        document.write("<br>");
+        document.write(isFinite(NaN));
+        document.write("<br>");
+        document.write(isFinite(123-321));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        isNaN
+    </h3>
+    <script>
+        document.write(isNaN("a"));
+        document.write("<br>");
+        document.write(isNaN(5));
+        document.write("<br>");
+        document.write(!isNaN(5));
+        document.write("<br>");
+    </script>
+
+    <script>
+        let liczba0 = prompt("Wpisz liczbę","");
+        document.write(isNaN(liczba0)? "to nie jest liczba": "to jest liczba");
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        parseFloat
+    </h3>
+    <script>
+        document.write(parseFloat("b"));
+        document.write("<br>");
+        document.write(parseFloat(15.5));
+        document.write(!parseFloat("b"));
+        document.write("<br>");
+        document.write(!parseFloat(3));
+        document.write("<br>");
+        document.write(!parseFloat(15));
+        document.write("<br>");
+        document.write(parseFloat("16"));
+        document.write("<br>");
+        document.write(parseFloat("18 letnia szkoła"));
+        document.write("<br>");
+        document.write(parseFloat("jad 1 adad"));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        parseInt
+    </h3>
+    <script>
+        document.write(parseInt(1.2222));
+        document.write("<br>");
+        document.write(parseInt("1.2222"));
+        document.write("<br>");
+        document.write(parseInt("1.999999"));
+        document.write("<br>");
+        document.write(parseInt("1.9999 to prawie 2"))
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+
+    <script>
+        document.write(parseInt("11111111",2));
+        document.write("<br>");
+        document.write(parseInt("10",8));
+        document.write("<br>");
+        document.write(parseInt("ff", 16));
+        document.write("<br>");
+        document.write(parseInt("1111.11", 2));
+        document.write("<br>");
+        document.write(parseInt("10.101", 8));
+        document.write("<br>");
+        document.write(parseInt("ff.ffff", 16));
+        document.write("<br>");
+        document.write(parseInt(prompt("Wpisz jakąś liczbę do przeliczenia",""), prompt("Wpisz liczbę do przeliczenia","")));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        toString()
+    </h3>
+    <script>
+        let liczbaNaTekst = 50;
+
+        document.write(liczbaNaTekst + 50);
+        document.write("<br>");
+        document.write(liczbaNaTekst.toString() + 50);
+        document.write("<br>");
+        document.write(typeof(liczbaNaTekst.toString() + 50));
+        document.write("<br>");
+        document.write(typeof(liczbaNaTekst.toString()));
+        document.write("<br>");
+        document.write("😁👍");
+        document.write("<br>");
+        document.write("<br>");
+    </script>
+    <script>
+        let liczba11 = 255;
+        document.write(liczba11.toString(16));
+        document.write("<br>");
+        let liczba12 = 0;
+        document.write(liczba12.toString(16));
+        document.write("<br>");
+        let liczba13 = 11111;
+        document.write(liczba13.toString(2));
+        document.write("<br>");
+        let liczba14 = 10.11;
+        document.write(liczba14.toString(16));
+        document.write("<br>");
+        let liczba15 = 0xff;
+        document.write(liczba15.toString(10));
+        document.write("<br>");
+        let liczba16 = 0xff;
+        document.write(liczba16.toString(2));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        String
+    </h3>
+    <script>
+        document.write(String("qwerty"));
+        document.write("<br>");
+        document.write(typeof(String("123145124")));
+        document.write("<br>");
+        document.write(typeof(String(19488243692)));
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write(false + 45);
+        document.write("<br>");
+        document.write(!String(45) + 45);
+        document.write("<br>");
+        document.write(typeof(!String(45) + 45));
+        document.write("<br>");
+        document.write((Number(!String(45)) + 45));
+        document.write("<br>");
+        document.write(typeof((Number(!String(45)) + 45)));
+        document.write("<br>");
+        document.write(isNaN(Number(Boolean(123124))));
+        document.write("<br>");
+        document.write(Number(!String(45)) + String(45));
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        encodeURI itp...
+    </h3>
+    <script>
+        document.write(decodeURI("It%27s%20me%21"));
+        // za wyjątkiem: , / ? : @ & = + $ #
+        document.write("<br>");
+        document.write(encodeURI("It's me!"));
+        document.write("<br>");
+        document.write(decodeURIComponent("It%27s%20me%21%21%21%21"));
+        // również z: , / ? : @ & = + $ #
+        document.write("<br>");
+        document.write(encodeURIComponent("It's me! @#$%&"));
+        document.write("<br>");
+        document.write(decodeURIComponent("It's%20me!%20%40%23%24%25%26"))
+    </script>
+    <hr>
+</body>
+
+</html>

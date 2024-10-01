@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Funkcje</h1>
+    <h3>
+        Funckje z parametrem
+    </h3>
+    <hr>
+    <script>
+        function jakaLiczba(liczba)
+        {
+            //let liczba = prompt("Podaj liczbe", "");
+            let liczba1 = (liczba % 2 == 0)? "parzysta":"nieparzysta";
+            document.write(liczba1);
+        }
+        jakaLiczba(127);
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        function jakaLiczba2(liczba2)
+        {
+            let liczba3 = ((liczba2 % 2 != 0)? "liczba nieparzysta":"liczba parzysta");
+            document.write(liczba3);
+            document.write("<br>");
+            document.write(liczba2);
+            document.write("<br>");
+        }
+        jakaLiczba2(prompt("podaj liczbe2", ""))
+    </script>
+    <hr>
+    <script>
+        function modulLiczby(liczba4)
+        {
+            let modul = (liczba4 >= 0 )? liczba4: -liczba4;
+            return modul;
+        }
+
+        let mojaLiczba = prompt("Wprowadź liczbe4", "");
+        let mojaLiczba2 = modulLiczby(mojaLiczba);
+        document.write("Moduł liczby4 o wartości " + mojaLiczba + " wynosi "+ mojaLiczba2);
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        function czyParzysta(liczba5)
+        {
+            let jakaLiczba3 = (liczba5%2 == 0)? "parzysta":"nieparzysta";
+            return jakaLiczba3;
+        }
+        let mojaLiczba3 = prompt('Wpisz odowolną liczbę3');
+        let jakaToLiczba = czyParzysta(mojaLiczba3);
+        document.write(jakaToLiczba);
+    </script>
+    <hr>
+    <script>
+        function testLiczby(a)
+        {
+            let liczba;
+            if (a > 0)
+            {
+                wynik = "dodatnia";
+            }
+            else
+            {
+                wynik = "ujemna"
+            }
+            return wynik
+        }
+        alert(testLiczby(prompt("Wpisz liczbę do testowania", "")));
+        document.write("<br>");
+    </script>
+</body>
+</html>

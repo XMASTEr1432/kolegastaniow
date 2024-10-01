@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta charset="utf-8">
+
+	<title>document write</title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <script src=""></script>
+</head>
+<body>
+    <script>
+        document.write("Ala ma kota");
+        document.write("<br>");
+        document.write("2*2");
+        document.write("<br>");
+        document.write("2*a");
+        document.write("<br>");
+        document.write(2*2);
+        document.write("<br>");
+        document.write(2*a);
+        document.write("<br>");
+    </script>
+</body>
+</html>

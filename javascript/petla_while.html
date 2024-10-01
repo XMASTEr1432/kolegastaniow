@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+	<script src=""></script>
+</head>
+
+<body>
+	
+    <h1>
+        Instrukcje sterujące - pętla <i>while</i>
+    </h1>
+    <hr>
+    <script>
+        let licznikPetli0 = 0;
+        while(licznikPetli0 <= 10)
+            document.write(++licznikPetli0 + "<br>");
+    </script>
+    <hr>
+    <script>
+        let licznikPetli = 0;
+        while(licznikPetli <= 10)
+            document.write(licznikPetli++ + "<br>");
+            //document.write(++licznikPetli + "<br>");
+    </script>
+    <hr>
+    <script>
+        let licznikPetli2 = 0;
+        let zmienna2 = 1;
+        while(licznikPetli2 <= 10)
+        {
+            document.write(zmienna2+2*licznikPetli2 + "<br>");
+            licznikPetli2++
+        }
+    </script>
+    <hr>
+    <script>
+        let licznikPetli3 = 0;
+        let zmienna3 = 1;
+
+        while(licznikPetli3 <=100)
+        {
+            document.write(zmienna3+(1/10*licznikPetli3) + "<br>");
+            licznikPetli3++;
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        let licznikPetli4 = 0;
+        let zmienna4 = "a";
+        while(licznikPetli4 <=5)
+        {
+            //licznikPetli4++;
+            document.write(zmienna4+licznikPetli4 + " ");
+            //licznikPetli4++;
+            document.write(licznikPetli4+zmienna4 + "<br>");
+
+            licznikPetli4++;
+            //miejsce inkrementacji w skrypcie jest ważne !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        let licznikPetli5 = 0;
+        let zmienna5 = "b";
+        while(licznikPetli5 <=5)
+        {
+            document.write(zmienna5+licznikPetli5 + " ");
+            licznikPetli5++;
+            document.write(licznikPetli5+zmienna5 + "<br>");
+            
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        let licznikPetli6 = 0;
+        let zmienna6 = "c";
+        while(licznikPetli6 <=5)
+        {
+            licznikPetli6++;
+            document.write(zmienna6+licznikPetli6 + " ");
+            licznikPetli6++;
+            document.write(licznikPetli6+zmienna6 + "<br>");
+
+            //licznikPetli6++;
+            //miejsce inkrementacji w skrypcie jest ważne !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        let licznikPetli7 = 0;
+        let zmienna11 = prompt("Wpisz coś nowego tutaj: ", "");
+
+        while(licznikPetli7 <=5)
+        {
+            document.write(zmienna11 + "<br>");
+            licznikPetli7++;
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-size: 24pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+	<script src=""></script>
+</head>
+
+<body>
+	
+    <h3>Operatory inkrementacji/dekrementacji</h3>
+
+    <script>
+        document.write("Z przyrostkiem czyli postinkrementacja: x++" + "<br>");
+        document.write("Z przedrostkiem czyli preinkrementacja: ++x" + "<br>");
+        document.write("Z przyrostkiem czyli postdekrementacja: x--" + "<br>");
+        document.write("Z przedrostkiem czyli predekrementacja: --x" + "<br>");
+    </script>
+    <script>
+        let x = 1;
+        let x2 = 100;
+        document.write(x2); //x2=100
+        document.write("<br>");
+        document.write(x2++); //x2=100 + 1
+        document.write("<br>");
+        document.write(++x2); //x2=102
+        document.write("<br>");
+        document.write(x2); //x2=102
+        document.write("<br>");
+        y2 = x2++; //y2=102 + 1, x2=102 + 1
+        document.write(y2);
+        document.write("<br>");
+        y2 = ++x2;  //y2=104, x2=104
+        document.write(y2); //y2=104
+        document.write("<br>");
+        document.write(++y2); //y2=105
+        document.write("<br>");
+        document.write(x2); //x2=104
+        document.write("<br>");
+        document.write(++x);
+        document.write("<br>");
+        document.write(x++);
+        document.write("<br>");
+        document.write(y2);
+    </script>
+
+</body>
+
+</html>

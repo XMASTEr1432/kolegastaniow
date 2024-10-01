@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+	<script src=""></script>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+	<h1>Składnia i struktura programu</h1>
+    <h3>Funkcja warunkowa <i>if</i></h3>
+
+    <script>
+        let liczba = Number(prompt("Podaj dowolną liczbę: ",""));
+
+        alert("Wpisałeś poprawną liczbę: " + liczba);
+        alert("Kwadrat tej liczby to: " + liczba*liczba);
+        document.write("<br>");
+    </script>
+    
+    <script>
+        let liczba2 = Number(prompt("Podaj dowolną liczbę2: ", ""));
+        if(isNaN(liczba2))
+        {
+            alert("Nie podałeś poprawnej liczby2");
+        }
+        //te instrukcje wykonają się nie zależnie od wyniku warunku
+        alert("Wpisałeś poprawną liczbę2: " + liczba2);
+        alert("Kwadrat tej liczby to: " + liczba2*liczba2);
+        document.write("<br>");
+
+    </script>
+
+    <script>
+        let liczba3 = Number(prompt("Podaj dowolną liczbę3: ", ""));
+
+        if(isNaN(liczba3))
+        {
+            alert("Nie podałeś poprawnej liczby");
+        }
+        document.write("<br>");
+    </script>
+
+    <script>
+        let liczba4 = Number(prompt("Podaj dowolną liczbę4: ", ""))
+        if(!isNaN(liczba4))
+        {
+            alert("Wpisałeś poprawną liczbę4");
+            alert("Jest to: " + liczba4);
+        }
+        document.write("<br>");
+    </script>
+
+    <script>
+        let liczba5 = Number(prompt("Podaj dowolną liczbę5: ", ""));
+        if(!isNaN(liczba5))
+        {
+            alert("Wpisałeś poprawną liczbę5: ");
+            alert("Jest to: "+ liczba5);
+        }
+        if(isNaN(liczba5))
+        {
+            alert("Wpisałeś niepoprawną liczbę");
+        }
+        document.write("<br>");
+    </script>
+    
+    <hr>
+    <h3>
+        Instrukcja warunkowa <i>if... else...</i> oraz <i>if... else if...</i>
+    </h3>
+    <script>
+        let liczba6 = Number(prompt("Podaj dowolną liczbę6: ",""))
+        if(Boolean(liczba6) == true)
+        {
+            if(!isNaN(liczba6))
+            {
+                alert("Wpisałeś poprawnie liczbę6 i jest to: " + liczba6);
+                document.write("Wpisałeś poprawnie liczbę6 i jest to: "+liczba6);
+            }
+            else
+            {
+                alert("Wpisałeś niepoprawnie liczbę6");
+                document.write("Wpisałeś niepoprawnie liczbę 6");
+            }
+        }
+        else
+        {
+            alert("Brak wpisu");
+            document.write("Brak wpisu");
+        }
+        document.write("<br>");
+    </script>
+
+    <script>
+        const uzytkownik= "user1";
+        const haslo="pass1";
+
+        let uzytkownikwpis = prompt("Podaj nazwę użytkownika: ", "nazwa");
+
+        let haslowpis = prompt("Podaj hasło użytkownika", "hasło");
+
+        if(Boolean(uzytkownikwpis) == true && Boolean(haslowpis) == true)
+        {
+            if(uzytkownikwpis === uzytkownik && haslowpis === haslo)
+            {
+                alert("Witamy w serwisie!");
+            }
+            else
+            {
+                alert("Zła nazwa użytkownika lub hasło");
+            }
+        }
+        else
+        {
+            alert("Brak podanych danych uzytkownika");
+        }
+        document.write("logowanie...");
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        Instrukcja <i>switch... case...</i>
+    </h3>
+    <script>
+        let mojeMiasto = prompt("Wpisz nazwę miasta", "");
+
+        switch(mojeMiasto)
+        {
+            case "Paryż":
+                document.write("Niezły wybór!")
+                break;
+            case "Berlin":
+                document.write("Bez komentarza...")
+                break;
+            case "Budapeszt":
+                document.write("Ciekawy wybór!")
+                break;
+            default:
+                document.write("Chyba można zwiedzić");
+            document.write("<br>")
+        }
+    </script>
+
+    <script>
+        let trudneSlowo = prompt("Wpisz słowo", "");
+
+        switch(trudneSlowo)
+        {
+            case "góra":
+                document.write("super");
+                break;
+            case "gura":
+                document.write("zmień u na ó");
+                break;
+            case "kóra":
+                document.write("zmień k na g");
+                break;
+            case "kura":
+                document.write("zmień k na g i u na ó");
+                break;
+            default:
+                document.write("To nie ma sensu");                
+        }
+        document.write("<br>");
+    </script>
+    <script>
+        let kodJezyka = prompt ("Wpisz kod języka: ", "")
+        switch(kodJezyka)
+        {
+            case "en":
+                document.write("Good morning. Welcome!");
+                break;
+            case "de":
+                document.write("Guten Morgen!")
+                break;
+            case "it":
+                document.write("Boungiorno!")
+                break;
+            default:
+                document.write("Witaj! (język domyślny strony)")
+        }
+        document.write("<br>");
+    </script>
+</body>
+
+</html>

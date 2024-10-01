@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+	<script src=""></script>
+</head>
+
+<body>
+	
+<h1>Składnia i struktura programu</h1>
+
+<h3>Funkcje predefiniowane</h3>
+
+<script>
+    alert("Alert:\n <b>P</b>owitanie");
+    //window.alert();
+    document.write("<br>");
+    document.write("<br>");
+</script>
+<hr>
+<script>
+    alert(confirm("Confirm: Czy UFO istnieje?"));
+    //1window.confirm();
+    document.write("<br>");
+    document.write("<br>");
+</script>
+<hr>
+<script>
+    let zmienna4 = prompt("Podaj swój wiek","Ile masz lat?");
+    document.write(zmienna4 + "<br>");
+    //window.prompt();
+</script>
+<hr>
+<script>
+    let confirmWart = confirm("Czy masz przynajmniej 18 lat?");
+
+    let alertWart = confirmWart? "Wybrałeś Ok: jesteś pełnoletni": "Nie jesteś pełnoletni";
+
+    alert(alertWart);
+
+    //alert(confirmWart? "Wybrałeś Ok: jesteś pełnoletni": "Nie jesteś pełnoletni");
+    document.write("<br>");
+    document.write("<br>");
+</script>
+<hr>
+<script>
+    let alertWart2 = (confirm("Czy masz więcej niż 18 lat?"))? "Wybrałeś Ok: jesteś pełnoletni": "Nie jesteś pełnoletni";
+    alert(alertWart2);
+    document.write("<br>");
+    document.write("<br>");
+</script>
+<hr>
+<script>
+    const loginWzor = "user1";
+    const passWzor = "pass1";
+
+    let loginWart = prompt("Podaj nazwę użytkownika","");
+    let passWart = prompt("Podaj hasło", "");
+
+    let enterWiad = (loginWzor === loginWart) && (passWzor === passWart)? "elo żelo": "źle coś wpisałeś żelku";
+    alertWart(enterWiad);
+    document.write("<br>");
+    document.write("<br>");
+</script>
+<hr>
+</body>
+
+</html>

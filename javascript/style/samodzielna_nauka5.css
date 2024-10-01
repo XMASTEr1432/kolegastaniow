@@ -1,0 +1,13 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40pt;
+}
+
+button
+{
+    border: 50px red solid;
+    font-size: 80pt;
+    background-color: white;
+    margin-bottom: 10%;
+}

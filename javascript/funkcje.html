@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+	<script src=""></script>
+</head>
+
+<body>
+	
+<h1>
+    Funkcje
+</h1>
+
+<h3>
+    Funkcje użytkownika
+</h3>
+
+<script>
+	function jakaLiczba()
+	{
+		let liczba1 = prompt("Podaj liczbę1", "");
+		let liczba2 = (liczba1 % 2 == 0)? "liczba parzysta":"liczba nieparzysta";
+		document.write(liczba2);
+		document.write("<br>");
+	}
+	jakaLiczba();
+</script>
+<script>
+	jakaLiczba();
+</script>
+
+<br><br>
+<hr>
+<script>
+	function wartoscBezwgledna()
+	{
+		let liczba3 = prompt("Wpisz dowolną liczbę3", "");
+		let mod = (liczba3 >=0)? liczba3: - liczba3;
+		let msg = (isNaN(liczba3))? "Wprowadź liczbę!": "Moduł liczby "+liczba3+" wynosi " + mod;
+		document.write(msg);
+	}
+	document.write("<br>");
+</script>
+
+<script>
+	wartoscBezwgledna();
+	document.write("<br>");
+</script>
+<hr>
+<script>
+	// funkcja wyswietlajaca biezaca date
+	// utworzenie i nazwanie nowej funkcji
+
+	function biezacaData()
+	//utworzenie zmiennej, ktora pobiera biezaca date z funkcji wbudowanej/predefiniowanej
+	{
+		let dzisiaj = new Date();
+		//polecenie do wykonania
+		document.write(dzisiaj.toDateString());
+	}
+</script>
+<script>
+	biezacaData();
+</script>
+<br>
+<hr>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Wartości, typy, operatory 2: Electric Boogaloo</title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-size: 24pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+	<script src=""></script>
+</head>
+
+<body>
+    <h3>Automatyczna konwersja typów</h3>
+    <script>
+        document.write(8*8 + " to jest wynik" + "<br>");
+        document.write(8*0 + "<br>");
+        document.write(8*null + "<br>");
+        document.write(8*undefined + "<br>");
+        document.write(8*false + "<br>");
+        document.write(9*"9" + "<br>");
+        document.write(8.8 * "8.8" + "<br>");
+        document.write(8*"osiem" + "<br>");
+        document.write("osiem" + "osiem" + "<br>");
+        document.write(false + "<br>");
+        document.write(true + "<br>");
+        document.write(true * false + "<br>");
+        document.write((true == 1) + "<br>");
+        document.write((false == 0) + "<br>");
+    </script>
+    <hr>
+    <script>
+        document.write((null == null) + "<br>");
+        document.write((null == undefined) + "<br>");
+        document.write((undefined == undefined) + " fr fr" + "<br>");
+        document.write((undefined == "") + "<br>");
+        document.write((null == "") + "<br>");
+        document.write((typeof("")) + "<br>");
+        document.write((null == 0) + "<br>");
+        document.write((null == "fr fr") + "<br>");
+        document.write((null != "fr fr") + "<br>");
+    </script>
+    <hr>
+    <script>
+        document.write((null || "ala") + "<br>");
+        document.write(("ola" || "ela") + "<br>");
+        document.write(("ula" || null) + "<br>");
+        document.write(("null" || null) + "<br>");
+        document.write(typeof("null" || null) + "<br>");
+        document.write((false || "ola" || "ala") + "<br>");
+    </script>
+    <hr>
+    <script>
+        document.write((null && "ala") + "<br>");
+        document.write(("ola" && "ala") + "<br>");
+        document.write(("ula" && null) + "<br>");
+        document.write(typeof("null" && null) + "<br>");
+        document.write((false && "ola" && "ela") + "<br>");
+    </script>
+    <hr>
+    <h3>Wymuszenie konwersji typów</h3>
+    <h5>Polecenia</h5>
+    <script>
+        document.write("+" + "<br>");
+        document.write("Boolean" + "<br>");
+        document.write("String" + "<br>");
+        document.write("Number" + "<br>");
+        document.write("Number" + "<br>");
+        document.write("pasrseInt" + "<br>");
+        document.write("parseFloat" + "<br>");
+    </script>
+    <hr>
+    <script>
+        document.write ("+"+ "<br>");
+        document.write(Boolean("ala ma psa")+ "<br>");
+        document.write(typeof(String(25+25)) + "<br>");
+        document.write(typeof(Number(true))+ "<br>");
+        document.write("parseInt" + "<br>");
+        document.write("parseFloat" + "<br>");
+    </script>
+</body>
+
+</html>

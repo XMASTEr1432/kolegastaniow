@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title>Wartości, typy, operatory</title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+	<script src=""></script>
+    <style>
+        body
+        {
+            font-size: 20pt;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>
+        Liczby number
+    </h3>
+	<script>
+        document.write(12);
+        document.write("<br>");
+        document.write(12.12);
+        document.write("<br>")
+        document.write(5e2); // zapis naukowy
+        document.write("<br>");
+        document.write(0xff);
+        document.write("<br>");
+        document.write(0o10); // zapis oktalny
+        document.write("<br>");
+        document.write(0b101); // zapis binarny
+        document.write("<br>")
+    </script>
+    <hr>
+    <h3>
+        Liczby duże BigInt
+    </h3>
+    <script>
+        document.write(123456789123456789n);
+        document.write("<br>");
+        document.write(123456789123456789n + 123n);
+        document.write("<br>");
+        document.write(123456789123456789n + 123);
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        Operatory arytmetyczne
+    </h3>
+    <script>
+        document.write(12+13-5/2*3);
+        document.write("<br>");
+        document.write([12+(13-5)/2]*3);
+        document.write("<br>");
+        document.write(12%3);
+        document.write("<br>");
+        document.write(12.12%3 + "<br>");
+        document.write((12%3)*(12%5) + "<br>")
+    </script>
+    <hr>
+    <h3>
+        Liczby specjalne
+    </h3>
+    <script>
+        document.write(NaN + "<br>");
+        document.write(Infinity + "<br>");
+        document.write(25/0 + '<br>')
+    </script>
+    <hr>
+    <h3>
+        Łancuch - string
+    </h3>
+    <script>
+        document.write("ola" + "<br>");
+        document.write('ola' + "<br>");
+        document.write("ola \"asia\" gosia" + "<br>");
+        document.write('"ola"' + "<br>");
+        document.write('"ola" asia "gosia"' + "<br>");
+        document.write("ola asia \\gosia\\" + "<br>");
+    </script>
+    <hr>
+    <h3>
+        Konkatenacja
+    </h3>
+    <script>
+        document.write(25 + 50 + "<br>");
+        document.write("woda sodowa" + 25 + "<br>");
+        document.write("woda " + "sodowa " + "uderzy " + "do " + "głowy" + "<br>");
+        document.write(47 + "47" + "<br>");
+        document.write("47" + 47 + "<br>");
+        document.write("47"*3);
+    </script>
+    <hr>
+    <h3>
+        Operatory logiczne
+    </h3>
+    <script>
+        document.write(true && true + "<br>");
+        document.write(1 && 1 + "<br>");
+        document.write(true && 1 + "<br>");
+        document.write(false && false + "<br>");
+        document.write("aaa" && "ddd" + "<br>");
+        document.write(false || false + "<br>");
+        document.write("123" || "456" + "<br>");
+    </script>
+    <hr>
+    <h3>
+        Operatory porównania
+    </h3>
+    <script>
+        document.write((true == true) + " true == true" +"<br>");
+        document.write((true == 1) + " true == 1" + "<br>");
+        document.write((1 != 1) + " 1!=1" + "<br>");
+        document.write((true === true) + " true === true" + "<br>");
+        document.write((true === 1) + " true === 1" + "<br>");
+        document.write((false === 0) + " false === 0" + "<br>");
+        document.write((1 == 1) + " 1 == 1" + "<br>");
+        document.write((1 == "1") +" 1 == \"1\""+ "<br>");
+        document.write((1 === "1") + "1 === \"1\" "+ "<br>");
+        document.write((1 !== "1") + "1 !== \"1\"" + "<br>");
+        document.write((NaN == NaN) + "NaN == NaN" +"<br>");
+        document.write((NaN === NaN) + "NaN === NaN" + "<br>");
+    </script>
+    <hr>
+    <h3>
+        Symbol
+    </h3>
+    <script>
+        let sym1 = "ala ma kota";
+        let sym2 = "ala ma kota";
+        document.write(sym1 === sym2);
+        document.write("<br>");
+        let sym3 = Symbol("ala ma kota");
+        let sym4 = Symbol("ala ma kota");
+        document.write(sym3 === sym4)
+    </script>
+    <h3>
+        Operator warunkowy
+    </h3>
+    <script>
+        document.write(true && true ? "ok":"nie ok");
+        document.write("<br>");
+        document.write(10%3==0 ? "liczba jest podzielna przez 3":"liczba nie jest podzielna przez 3");
+        document.write("<br>");
+        document.write(10%2==0 ? "liczba jest parzysta":"liczba nie jest parzysta");
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        Wartości niezdefiniowane
+    </h3>
+    <script>
+        document.write(null);
+        document.write("<br>");
+        document.write(undefined);
+        document.write("<br>");
+        let zmienna;
+        document.write(zmienna);
+        document.write("<br>");
+    </script>
+    <hr>
+    <h3>
+        Operator typeof
+    </h3>
+    <script>
+        document.write(typeof(true));
+        document.write("<br>");
+        document.write(typeof(5));
+        document.write("<br>");
+        document.write(typeof(null));
+        document.write("<br>");
+        document.write(typeof(undefined));
+        document.write("<br>");
+        document.write(typeof("ala ma kora"));
+        document.write("<br>");
+        document.write(typeof("ala ma kora" + 24 + 780));
+        document.write("<br>");
+    </script>
+    <hr>
+</body>
+
+</html>

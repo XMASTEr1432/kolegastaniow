@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8">
+
+	<title></title>
+	
+	<link rel="stylesheet" href="">
+	
+	<!-- skrypt zapewniający zgodność ze starszymi wersjami przeglądarki IE -->
+	<script>
+		document.createElement('header');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('footer');
+		document.createElement('section');
+	</script>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+        }
+    </style>
+	<script src=""></script>
+</head>
+<body>
+	<h1>
+        Instrukcje sterujące - pętla <i>for...</i>
+    </h1>
+
+    <script>
+        for(let num = 1; num <= 10; num++)
+        {
+            //if (num % 5 == 0) continue;
+            //if (num == 3) break;
+            document.write("liczba1 " + num + "<br>");
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        for(let i = 1; i<=10;)
+        {
+            document.write("Tomasz Małoletni. ");
+            i++;
+        }
+        document.write("<br>");
+    </script>
+    <hr>
+    <script>
+        let i = 1;
+        for(;;)
+        {
+            document.write("Tomasz Dolnośląski. ");
+            if(i++ >= 100)
+            {
+                break;
+            }
+        }
+        document.write("<br>")
+    </script>
+    <hr>
+    <script>
+        let zmienna = 1;
+        for (let licznik = 0; licznik<10;licznik+=1)
+        {
+            document.write((zmienna = zmienna * zmienna) + "<br>");
+        }
+    </script>
+</body>
+
+</html>
