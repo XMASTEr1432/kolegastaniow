@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podzielnosc</title>
+</head>
+<body>
+    <h1>
+        Czy pierwsza podana liczba jest podzielna przez drugą wpisaną
+    </h1>
+    <script>
+        let a = prompt("Podaj liczbę do podzielenia", "");
+        let b = prompt("Podaj liczbę do podzielenia przez", "");
+        if(a % b == 0)
+        {
+            document.write("Liczba " + a + " jest podzielna przez " + b + ".");
+        }
+        else if (a % b != 0)
+        {
+            document.write("Liczba " + a + " nie jest podzielna przez " + b + ".");
+        }
+        else
+        {
+            document.write("Źle podane dane.");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Skrytp konwertujący w zapisie binarnym, ósemkowym lub szesnastkowym na liczby dziesiętne
+    </h1>
+    <script>
+        liczba = prompt("Podaj liczbę w zapisie binarnym, ósemkowym lub szesnastkowym", "");
+        format = prompt("Podaj system zapisu liczby","");
+        if (format == "2")
+        {
+            document.write("Liczba w systemie " + format + " to " + liczba);
+            document.write("<br>");
+            document.write("Liczba zapisana w systemie dziesiętnym to:")
+            document.write(parseInt(liczba, 2));
+        }
+        else if (format == "8")
+        {
+            document.write("Liczba w systemie " + format + " to " + liczba);
+            document.write("<br>");
+            document.write("Liczba zapisana w systemie dziesiętnym to:")
+            document.write(parseInt(liczba, 8));
+        }
+        else if(format == "16")
+        {
+            document.write("Liczba w systemie " + format + " to " + liczba);
+            document.write("<br>");
+            document.write("Liczba zapisana w systemie dziesiętnym to:")
+            document.write(parseInt(liczba, 16));
+        }
+        else
+        {
+            document.write("Źle podane wartości");
+        }
+    </script>
+</body>
+</html>

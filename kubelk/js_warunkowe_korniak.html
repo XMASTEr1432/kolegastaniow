@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warunkowe</title>
+</head>
+<body>
+    <h1>
+        Skrypty określające, czy wartość wpisana w funkcji prompt() jest liczbą i czy jest podzielna przez 7.
+    </h1>
+
+    <script>
+        let l1 = prompt("Podaj liczbę (Operator warunkowy)", "");
+        let l2 = prompt("Podaj liczbę (if...)", "");
+        let l3 = prompt("Podaj liczbę (if... else...)");
+        let l4 = prompt("Podaj liczbę (switch... case...)");
+    </script>
+    <b>
+        Operator warunkowy
+    </b>
+    <br>
+    <script>
+        zapytanie = (Number(l1) % 7 == 0)? document.write("liczba jest podzielna przez 7"): document.write("liczba nie jest podzielna przez 7");
+    </script>
+    <hr>
+    <b>
+        Instrukcja prosta if...
+    </b>
+    <br>
+    <script>
+        if(Number(l2) % 7 == 0)
+        {
+            document.write("liczba jest podzielna przez 7");
+        }
+    </script>
+    <hr>
+    <b>
+        Instrukcja if... else...
+    </b>
+    <br>
+    <script>
+        if(Number(l3) % 7 == 0)
+        {
+            document.write("liczba jest podzielna przez 7");
+        }
+        else
+        {
+            document.write("liczba nie jest podzielna przez 7");
+        }
+    </script>
+    <hr>
+    <b>
+        Instrukcja switch... case...
+    </b>
+    <br>
+    <script>
+        switch(Number(l4) % 7 == 0)
+        {
+            case true:
+                document.write("liczba jest podzielna przez 7");
+                break;
+            default:
+                document.write("liczba nie jest podzielna przez 7 lub została źle wpisana");
+        }
+    </script>
+</body>
+</html>

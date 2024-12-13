@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_logowanie</title>
+</head>
+<body>
+    <h1>Skrypt logowania, sprawdzający czy hasło jest numerem (typ liczbowy). Nie można wykonać innej czynności - tylko wpisanie hasła z danymi typu <i>liczbowego</i>. </h1>
+
+    <script>
+        let logowanie = prompt("Podaj hasło w typie liczbowym");
+        // console.log(typeof(logowanie))
+        // console.log(logowanie)
+        // console.log(typeof(Number(logowanie)))
+        // console.log(Number(logowanie))
+        while (isNaN(Number(logowanie)) || !logowanie)
+        {
+            logowanie = prompt("Podaj hasło w typie liczbowym");
+        }
+        document.write("ala ma kota")
+    </script>
+</body>
+</html>
