@@ -9,7 +9,7 @@
     <title>PHP - sesje</title>
 </head>
 <body>
-    <h1>Obsługa serwera WWW w PHP - ciasteczka</h1>
+    <h1>Obsługa serwera WWW w PHP - sesje</h1>
     <h3>Sesje</h3>
 
     <?php 
@@ -21,7 +21,10 @@
         else
         {
             // jeśli jest zarejestrowana
+            $_SESSION['licznik']++;
+            // zwiększ jej wartość 
         }
+        echo 'Strona odczytana '.$_SESSION['licznik'].' razy w ciągu tej sesji';
     ?>
 </body>
 </html>
