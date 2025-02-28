@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona główna</title>
+    <link rel="stylesheet" href="style-glowna.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1 id="tytulstrony">Ala ma kota</h1>
+        </header>
+        <section class="boczne">
+            <nav>
+                <h3>SERWIS</h3>
+                <a href="">strona1</a> <br>
+                <a href="">strona2</a> <br>
+                <a href="">strona3</a> <br>
+                <a href="">strona4</a> <br>
+                <a href="">strona5</a> <br>
+            </nav>
+        </section>
+        <section>
+            <article>
+                <h3>Formularz</h3>
+                <p>Wpisz tekst do wyświetlenia obok po prawej.</p>
+                <form action="" id="formularz1">
+                    <textarea name="tekst" id="tekst" cols="30" rows="5"></textarea> <br>
+                    <input type="submit" value="Wyślij">
+                </form>
+            </article>
+            <article>
+                <h3>Treść pola</h3>
+                <p>To jest tekst z lewej.</p>
+                <div id="wynik"></div>
+            </article>
+            <article>
+                <h3>Skrypty</h3>
+                <p>Zmień czcionkę tekstu po prawej: </p>
+                <form action="" id="czcionka"><input type="text" id="czcionka-tekst"><input type="submit" value="Wyślij"></form>
+                <p>Zmień kolor czcionki po prawej: </p>
+                <form action="" id="kolorczcionka"><input type="text" id="kolorczcionka-tekst"><input type="submit" value="Wyślij"></form>
+                <p>Zmień treść tytułu strony: </p>
+                <form action="" id="tytultekst"><input type="text" id="tytultekst-tekst"><input type="submit" value="Wyślij"></form>
+            </article>
+            <article>
+                <h3>Tekst</h3> 
+                <div id="tekstedycja">
+                    Ala ma kota. Kot ma Ale. <br> Są ze sobą szczęśliwi. <br> Nam strzelać nie kazano.
+                </div>
+            </article>
+        </section>
+        <section class="boczne">
+            <nav>
+                <input type="button" value="ZSTiE" class="boczne-przyciski"> <br>
+                <input type="button" value="js_skrypty3" id="przyciskprzejscie" class="boczne-przyciski"> <br>
+                <input type="button" value="CKE" class="boczne-przyciski"> <br>
+            </nav>
+        </section>
+        <footer>
+            <img src="" alt="animowany-gif">
+        </footer>
+    </main>
+    <script>
+        document.getElementById("przyciskprzejscie").addEventListener("click", ()=>{
+                window.location = "js_skrypty3.html"
+            })
+        document.getElementById("formularz1").addEventListener("submit", (e)=>{
+            e.preventDefault()
+            document.getElementById("wynik").innerHTML = document.getElementById("tekst").value
+        })
+
+
+        // zmiana tekstu
+
+
+        document.getElementById("czcionka").addEventListener("submit", (e)=>{
+            e.preventDefault()
+            document.getElementById("tekstedycja").style.fontFamily = document.getElementById("czcionka-tekst").value
+        })
+        document.getElementById("kolorczcionka").addEventListener("submit", (e)=>{
+            e.preventDefault()
+            document.getElementById("tekstedycja").style.color = document.getElementById("kolorczcionka-tekst").value
+        })
+        document.getElementById("tytultekst").addEventListener("submit", (e)=>{
+            e.preventDefault()
+            document.getElementById("tytulstrony").innerHTML = document.getElementById("tytultekst-tekst").value
+        })
+    </script>
+</body>
+</html>

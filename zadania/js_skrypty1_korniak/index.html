@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_skrypty1</title>
+</head>
+<body>
+    <h1>Skrypty</h1>
+
+    <h3>Proszę napisać skrypty wg. wzorca</h3>
+
+    <h3>Nazwa ćwiczenia: js_skrypty1</h3>
+
+    <h3>Polecenia</h3>
+
+    <h4>Powitanie zgodne z porą dnia: operator warunkowy/instrukcja warunkowa i obiekt Date()</h4>
+
+    <script>
+        const godzina = new Date()
+
+        wypisPowitanie = godzina.getHours() < 18 ? document.write("Dzień dobry"):document.write("Dobry wieczór")
+    </script>
+
+    <h4>Zegar umieszczony w pasku tytulu: obiekt Date() i BOM/DOM</h4>
+
+    <script>
+        setInterval(zegarAktualny, 1000)
+        zegarAktualny()
+        function zegarAktualny() {
+            const czas = new Date()
+
+            document.title = czas.toLocaleTimeString()
+        }
+    </script>
+
+    <h4>Zmieniające się losowo banery: grafika, obiekt Math() i obiekt Date()</h4>
+    <div id="obrazy"></div>
+    <br><br>
+    <script>
+        setInterval(zmianaObrazu, 1000)
+        zmianaObrazu()
+        function zmianaObrazu(){
+            const obrazy = [
+                "<img src='banner1.png' alt='banner1'>",
+                "<img src='banner2.png' alt='banner2'>",
+                "<img src='banner3.png' alt='banner3'>"
+            ]
+            let obrazLosowanie = Math.floor((Math.random() * 3) + 1);
+            document.getElementById("obrazy").innerHTML = obrazy[obrazLosowanie - 1]
+        }
+    </script>
+
+    <h4>Tekst pływający po ekranie w lewo, uwzględniający rozmiar pola tekstowego: obiekt String()</h4>
+
+    <textarea name="plywanie" id="plywanie" cols="30" rows="1" readonly></textarea>
+
+    <script>
+        let text = document.getElementById("plywanie")
+
+        text.textContent = "Ala ma kota... Kot ma Ale... Są ze sobą szczęśliwi..."
+    </script>
+
+    <h4>Skrypt, który oczytuje dzień tygodnia z daty systemowej, a następnie wyświetla na ekranie jedno z tzw. praw Murphy'ego dla każdego dnia inne: instrukcja switch-case i obiekt Date()</h4>
+
+    <script>
+        let dzienTygodnia = new Date()
+
+        dzienTygodnia = dzienTygodnia.getDay()
+
+        switch(dzienTygodnia){
+            case 1:
+                document.write("Jeżeli coś moze się popsuć, to z pewnoscią się popsuje.")
+                break;
+            case 2:
+                document.write("Jeżeli coś może się popsuć w wielu miejscach, to pierwsze uszkodzenie wystąpi tam, gdzie wyrządzi najwięcej szkody.")
+                break;
+            case 3:
+                document.write("Jeżeli przewidziałeś cztery możliwe awarie i zabezpieczyłeś się przed nimi, to natychmiast wydarzy się piąta, na która nie byłeś przygotowany.")
+                break;
+            case 4: 
+                document.write("Sprawy pozostawione sobie samym zmieniają się ze złych na gorsze.")
+                break;
+            case 5: 
+                document.write("Jeżeli wydaje się, że wszystko działa dobrze, to znaczy, ze coś przeoczyłeś.")
+                break;
+            case 6: 
+                document.write("Wymiary będą zawsze podane w najmniej użytecznych jednostkach.")
+                break;
+            case 7:
+                document.write("Każdy przewód przycięty na długosc okaże się za krótki.")
+                break;
+            default: 
+                console.log(dzienTygodnia)
+        }
+    </script>
+
+</body>
+</html>

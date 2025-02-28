@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_dom</title>
+    <style>
+        body{
+            width: 960px;
+            margin: auto;
+        }
+        h1
+        {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        strona pojawi się dopiero po wpisaniu user i pass1
+
+        skrypt zmieniający treść nagłówka
+        skrypt wstawiającey tekst po prawej stronie od formularza tekst w divie
+        skrypt zeminiajacy właściwości csss
+
+        skrypt witaj user1 po procesie logowania
+        h1 po najechaniu ma tresc tytul najechany
+        po opuszczeniu strony komunikat Wróć do serwisu jak najszybvjie
+
+        skrypt dostarczający informacje o strone:
+        deklaracja typu dokumentu
+        ilość formularzy na stronie
+        data ostatniej modyfikacji dokumentu
+        tytul strony 
+    -->
+
+    <h1 id="tytul">Skrypty JavaScript</h1>
+    <hr>
+    <h3>Zmiana treści nagłówka</h3>
+    <form action="" id="zmianaTytulu">
+        <label for="nazwaTytulu">Wpisz nowy tytuł: <input type="text" name="nazwaTytulu" id="nazwaTytulu"></label>
+        <input type="submit" value="Zmień tytuł">
+    </form>
+    <hr>
+    <h3>Wstawianie tekstu</h3>
+    <form action="" id="wstawianieTekstu">
+        <label for="tekstWpisanie">
+            Wpisz tekst do przekazania do bloku &lt;div&gt;
+            <textarea name="tekstWpisanie" id="tekstWpisanie" cols="30" rows="3"></textarea>
+            <br>
+            <input type="submit" value="Przekaż">
+        </label>
+        <div id="divTekst"></div>
+    </form>
+    <hr>
+    <h3>Zmiana właściwości CSS</h3>
+    <form action="">
+        <p>Zamiana koloru tła wszystkich nagłówków z &lt;h3&gt; :</p>
+        <label for="zmianaKoloruTla">Wpisz kolor w notacji heksadecymalnej z #: <input type="text" name="zmianaKoloruTla" id="zmianaKoloruTla"></label><input type="button" value="Zmień kolor" onclick="zmianaKoloruNag()">
+    </form>
+    <form action="">
+        <p>Zmiana czcionki tytułu h1: </p>
+        <label for="zmianaCzcionkiTytulu">Wpisz styl czcionki: <input type="text" name="zmianaCzcionkiTytulu" id="zmianaCzcionkiTytulu"><input type="button" value="Zmień styl" onclick="zmianaCzcionkiTyt()"></label>
+    </form>
+    <form action="">
+        <p>Zamiana rozmiaru pudełka z tytułem &lt;h1&gt; : </p>
+        <label for="wysokoscTyt">Wpisz wysokość: <input type="number" name="wysokoscTyt" id="wysokoscTyt"></label><br>
+        <label for="szerokoscTyt">Wpisz szerokość: <input type="number" name="szerokoscTyt" id="szerokoscTyt"></label><input type="button" value="Zmień wymiary" onclick="zmianaRozmiaru()">
+    </form>
+    <hr>
+    <h3>Zdarzenia</h3>
+    <hr><br><hr>
+    <h3>Informacje o stronie</h3>
+    <div id="informacje"></div>
+    <script>
+        // ładowanie strony
+
+        onload = () =>
+        {
+            let login;
+            let haslo;
+            // user1 pass1
+            while(login != "user1" && haslo != "pass1")
+            {
+                login = prompt("Podaj login", "")
+                haslo = prompt("Podaj haslo", "")
+                if(login != "user1" && haslo != "pass1")
+                {
+                    alert("Błędny login lub hasło")
+                }
+            }
+            alert("Witaj "+login+" na stronie!")
+
+        }
+
+
+        // żeby nie usuwało wpisanych rzeczy do formularza
+        addEventListener("submit", function(event){
+            event.preventDefault()
+        })
+
+        // najechanie tytułu
+        document.getElementById("tytul").addEventListener("mouseover", function(){
+            wczesniejszyTytul = document.getElementById("tytul").innerHTML = "Tytuł najechany"
+        })
+        document.getElementById("tytul").addEventListener("mouseout", function(){
+            document.getElementById("tytul").innerHTML = "Skrypty JavaScript"
+        })
+
+        // zmiana treści nagłówka
+        document.getElementById("zmianaTytulu").addEventListener("submit", function(){
+            document.getElementById("tytul").innerHTML = document.getElementById("nazwaTytulu").value
+        })
+
+        // zmiana diva
+        document.getElementById("wstawianieTekstu").addEventListener("submit", function(){
+            document.getElementById("divTekst").innerHTML = document.getElementById("tekstWpisanie").value
+        })
+
+        // zmiana właściwości css
+        let nag = document.getElementsByTagName("h3")
+        let tytul = document.getElementById("tytul")
+        function zmianaKoloruNag(){  
+            for(let i=0; i<nag.length; i++){
+                nag[i].style.backgroundColor = document.getElementById("zmianaKoloruTla").value
+            }
+        }
+        function zmianaCzcionkiTyt(){
+            tytul.style.fontFamily = document.getElementById("zmianaCzcionkiTytulu").value
+        }
+        function zmianaRozmiaru(){
+            tytul.style.height = document.getElementById("wysokoscTyt").value + "px"
+            tytul.style.width = document.getElementById("szerokoscTyt").value + "px"
+        }
+        document.getElementById("informacje").innerHTML = "Typ dokumentu: " + document.contentType + "<br>" + "Ilość formularzy na stronie: " + document.getElementsByTagName("form").length + "<br>" + "Ostatnia modyfikacja dokumentu: " + document.lastModified + "<br>" + "Nazwa dokumentu: " + document.title
+    </script>
+</body>
+</html>

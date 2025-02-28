@@ -1,0 +1,63 @@
+h1
+{
+    text-align: center;
+}
+header
+{
+    height: 120px;
+}
+body
+{
+    margin: 0 auto;
+    width: 960px;
+    height: 720px;
+    text-align: center;
+    
+}
+main
+{
+    background-color: rgb(0, 255, 0);
+}
+
+section
+{
+    min-height: 528px;
+    width: 660px;
+    float: left;
+    background-color: rgb(175, 175, 255);
+}
+footer
+{
+    height: 120px;
+    margin-top: 55%;
+    background-color: rebeccapurple;
+}
+section.boczne
+{
+    width: 150px;
+}
+article
+{
+    height: 260px;
+    float: left;
+    width: 321px;
+}
+
+div
+{
+    overflow: auto;
+    white-space: nowrap;
+    height: 120px;
+    width: 255px;
+    border: 1px solid black;
+    margin-left: 10%;
+    background-color: white;
+    text-align: left;
+}
+
+.boczne-przyciski
+{
+    margin-top: 25%;
+    height: 80px;
+    width: 80px;
+}

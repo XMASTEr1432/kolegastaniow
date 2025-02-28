@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js.js"></script>
+    <style>
+        body
+        {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #czerwonyKlocek
+        {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        #lew
+        {
+            width: 350px;
+            height: 350px;
+        }
+        .tloNieb{
+            background-color: aquamarine;
+        }
+    </style>
+    <title>jq_skrypty_korniak</title>
+</head>
+<body>
+    <h1>jq_skrypty</h1>
+    <h3>Naciśnięcie klawisza myszy</h3>
+    <!-- alert odpowiedź -->
+    <p id="klik">Kiedy wybuchło I Powstanie Śląskie?</p>
+
+    <i>Aby poznać odpowiedź, naprowadź kursor na pytanie i wciśnij przycisk myszy</i>
+    <script>
+        $(document).ready(function () {
+            $("#klik").click(function () {
+                alert("I Powstanie Śląskie wybuchło w nocy z 16 na 17 sierpnia 1919 r.")
+            })
+        })
+    </script>
+    <h3>Przekazywanie danych do metody obsługi zdarzeń</h3>
+    <p>Jaka wartość</p>
+    <!-- wybrany został przycisk o wartości cos -->
+    <input type="button" value="0" class="przycisk">
+    <input type="button" value="1" class="przycisk">
+    <input type="button" value="2" class="przycisk">
+    <input type="button" value="3" class="przycisk">
+    <input type="button" value="4" class="przycisk">
+    <input type="button" value="5" class="przycisk">
+    <input type="button" value="6" class="przycisk">
+    <input type="button" value="7" class="przycisk">
+    <input type="button" value="8" class="przycisk">
+    <input type="button" value="9" class="przycisk">
+    <p id="koniec"></p>
+    <script>
+        $(document).ready(function(){
+            $(".przycisk").click(function(){
+                $("#koniec").text("Wybrany został przycisk o wartości: " + $(this).attr("value"))
+            })
+        })
+    </script>
+
+    <h3>Dodawanie nowego elementu/nowej treści</h3>
+    <p id="dod">To jest treść dokumentu.</p>
+    <!-- dodaje ala ma kota albo kot ma ale -->
+    <input type="button" value="Dołącz tekst 1" id="dod1">
+    <input type="button" value="Dołącz tekst 2" id="dod2">
+    <script>
+        $(document).ready(function(){
+            $("#dod1").click(function(){
+                $("#dod").append(" Ala ma kota.")
+            })
+            $("#dod2").click(function(){
+                $("#dod").append(" Kot ma Alę.")
+            })
+        })
+    </script>
+
+    <h3>Zmiana tła - dodanie/usuniecie reguły CSS</h3>
+    <h4>Stare cytaty:</h4>
+    <div>
+        Ala ma kota. <br>
+        Kot ma Alę. <br>
+        Są ze sobą szczęśliwi. <br>
+    </div>
+    <h4>Nowe cytatyu:</h4>
+    <div>
+        Pan Kotek był chory. <br>
+        O większego trudno zucha, jak Stefek Burczymucha. <br>
+        Stoi na stacji lokomotywa. <br>
+    </div>
+    <input type="button" value="Dodaj tło" id="dodTlo"><input type="button" value="Usuń tło" id="usunTlo">
+    <script>
+        $(document).ready(function(){
+            $("#dodTlo").click(function(){
+                $("h4").addClass("tloNieb")
+            })
+            $("#usunTlo").click(function(){
+                $("h4").removeClass("tloNieb")
+            })
+        })
+    </script>
+    <h3>Zmiana rozmiarów elementu</h3>
+    <img src="lew.png" alt="lew" id="lew"><br>
+    <input type="button" value="Pokaż obrazek w powiększeniu" id="pow">
+    <script>
+        $(document).ready(function(){
+            $("#pow").click(function(){
+                $("img").width(500).height(500)
+            })
+        })
+    </script>
+    <h3>Przesuwanie elementów strony</h3>
+    <input type="button" value="◀️" id="lewo">
+    <input type="button" value="▶️" id="prawo">
+    <input type="button" value="🔽" id="dol">
+    <input type="button" value="🔼" id="gora">
+    <div id="czerwonyKlocek"></div>
+    <div style="margin-top: 300px;"></div>
+    <script>
+        $(document).ready(function(){
+            $("#lewo").click(function(){
+                $("#czerwonyKlocek").animate({
+                    left: '-=25px'
+                });
+            });
+            $("#prawo").click(function(){
+                $("#czerwonyKlocek").animate({
+                    left: '+=25px'
+                });
+            });
+            $("#dol").click(function(){
+                $("#czerwonyKlocek").animate({
+                    top: '+=25px'
+                });
+            });
+            $("#gora").click(function(){
+                $("#czerwonyKlocek").animate({
+                    top: '-=25px'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

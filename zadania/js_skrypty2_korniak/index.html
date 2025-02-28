@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_skrypty2</title>
+    <link rel="stylesheet" href="style-index.css">
+</head>
+<body>
+    <main>
+    <header>
+        <h1>Strona powitalna</h1>
+    </header>
+    <section class="boczne"></section>
+    <section>
+        <h3>Kliknij w poniższy przycisk aby przejść na stronę główną.</h3>
+        <input type="button" value="Przejdź" id="przycisk">
+        <script>
+            document.getElementById("przycisk").addEventListener("click", ()=>{
+                window.location = "glowna.html"
+            })
+        </script>
+    </section>
+    <section class="boczne"></section>
+    <footer></footer>
+    </main>
+</body>
+</html>

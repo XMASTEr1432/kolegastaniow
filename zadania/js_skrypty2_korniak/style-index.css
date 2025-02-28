@@ -1,0 +1,35 @@
+h1
+{
+    text-align: center;
+}
+header
+{
+    height: 120px;
+}
+body
+{
+    margin: 0 auto;
+    width: 960px;
+    height: 720px;
+    text-align: center;
+}
+section, header
+{
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+section
+{
+    height: 480px;
+    width: 650px;
+    float: left;
+}
+footer
+{
+    height: 120px;
+}
+section.boczne
+{
+    width: 148px;
+}

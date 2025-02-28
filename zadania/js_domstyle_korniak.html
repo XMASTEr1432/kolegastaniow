@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript i CSS</title>
+    <style>
+        body
+        {
+            margin: auto;
+            width: 960px;
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript i CSS</h1>
+
+    <h3>Lista zakupów</h3>
+
+    <form action="">
+        <input type="text" name="listaWpis" id="listaWpis">
+        <input type="submit" value="dodaj do listy">
+        <ol id="lista"></ol>
+    </form>
+
+    <script>
+        // let listaZakupow = new Array();
+
+        addEventListener("submit", function(event){
+            // aby po submicie nie usunęło value z inputa
+            event.preventDefault()
+            // listaZakupow.push("<li>"+document.getElementById("listaWpis").value+"</li>")
+            // document.getElementById("lista").innerHTML = listaZakupow.join("")
+
+            document.getElementById("lista").innerHTML += "<li>" + document.getElementById("listaWpis").value + "</li>"
+        })
+    </script>
+</body>
+</html>

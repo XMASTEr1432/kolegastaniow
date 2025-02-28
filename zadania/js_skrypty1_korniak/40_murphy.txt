@@ -1,0 +1,23 @@
+
+    Jeżeli coś moze się popsuć, to z pewnoscią się popsuje.
+	
+    Jeżeli coś może się popsuć w wielu miejscach, to pierwsze uszkodzenie wystąpi tam, gdzie wyrządzi najwięcej szkody.
+	
+    Jeżeli przewidziałeś cztery możliwe awarie i zabezpieczyłeś się przed nimi, to natychmiast wydarzy się piąta, na która nie byłeś przygotowany.
+	
+    Sprawy pozostawione sobie samym zmieniają się ze złych na gorsze.
+	
+    Jeżeli wydaje się, że wszystko działa dobrze, to znaczy, ze coś przeoczyłeś.
+	
+	Wymiary będą zawsze podane w najmniej użytecznych jednostkach.
+	
+	Każdy przewód przycięty na długosc okaże się za krótki.
+	
+	Stopień głupoty Twojego postępowania jest wprost proporcjonalny do liczby przyglądających Ci się osób.
+	
+	Dowolne urządzenie, uszkodzone w dowolny sposób (z wyjątkiem całkowitego zniszczenia) będzie doskonale działało w obecności wykwalifikowanego personelu naprawczego.
+	
+	Konieczność znaczących zmian w projekcie jest odwrotnie proporcjonalna do czasu pozostającego do oddania tego projektu.
+	
+	Jeżeli poziom bezpieczeństwa jest ustalony na podstawie doświadczenia twórców i obsługi naprawiającej, to dowolny użytkownik natychmiast znajdzie sposób, aby go przekroczyć.
+	

@@ -1,0 +1,110 @@
+body
+{
+    margin: 0 auto;
+    width: 960px;
+    background-color: blanchedalmond;
+}
+
+.gradient
+{
+    background-image: linear-gradient(rgb(0, 255, 0), blue);
+    font-size: 16pt;
+    padding: 5px;
+    max-width: 190px;
+    text-align: center;
+    float: left;
+}
+
+table, th, td
+{
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: left;
+}
+table
+{
+    position: relative;
+    float: right;
+    margin-top: 25px;
+}
+
+section
+{
+    min-height: 500px;
+}
+
+section:first-of-type
+{
+    background-color: greenyellow;
+}
+
+section:nth-of-type(3)
+{
+    background-color: rgb(123, 123, 255);
+    height: 900px;
+}
+
+article
+{
+    float: left;
+    width: 25%;
+    background-color: rgb(123, 123, 255);
+    min-height: 350px;
+    margin-left: 5%;
+}
+
+
+section:nth-of-type(3) > article
+{
+    background-color: rgb(0, 255, 0);
+    width: 45%;
+    margin-left: 2.5%;
+    margin-top: 5%;
+}
+
+section:nth-of-type(3) > article > h3
+{
+    text-align: center;
+    width: 50%;
+    float: left;
+}
+
+section:nth-of-type(3) > article > img
+{
+    float: left;
+    margin-left: 2.5%;
+    width: 48%;
+    height: 250px;
+}
+
+section:nth-of-type(3) > article > footer
+{
+    float: right;
+    width: 49%;
+}
+
+section:nth-of-type(4) > article
+{
+    background-color: blanchedalmond;
+}
+
+section > article > img 
+{
+    margin-left: 40%;
+    width: 75px;
+    height: 100px;
+}
+
+h3
+{
+    text-align: center;
+}
+
+section > header
+{
+    margin-bottom: 75px;
+    position: static;
+    width: 960px;
+    height: 0.1px;
+}
+
