@@ -1,0 +1,133 @@
+a
+{
+    color:  #5fb5f1;
+}
+
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #ffffcc;
+    width: 960px;
+    margin: 0 auto;
+}
+
+#stopka, #banner
+{
+    padding: 10px;
+}
+
+h1,h2, h3
+{
+    text-align: center;
+}
+
+h1
+{
+    color: #ee2727;
+}
+
+h2
+{
+    color: #fb3737;
+}
+
+#prawy
+{
+    background-color: #eeee27;
+}
+
+#prawy > a
+{
+    margin-left: 30%;
+}
+
+#banner
+{
+    position: relative;
+    float: left;
+    background-color: #ee2727;
+}
+
+#bannerTekst
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+}
+#bannerZdjecie { 
+    width: 650px;
+    height: 150px;
+    opacity: 0.3;
+}
+#glowka
+{
+    width: 960px;
+    height: 150px;
+    /* background-color: #ee2727; */
+}
+
+form
+{
+    float: right;
+    width: 120px;
+    height: 120px;
+}
+
+#logo
+{
+    float: left;
+    width: 120px;
+    height: 120px;
+}
+
+.boczne
+{
+    width: 200px;
+    height: 420px;
+    float: left;
+}
+
+#tresc
+{
+    width: 560px;
+    height: 420px;
+    float: left;
+}
+
+nav
+{
+    border: 1px solid black;
+}
+
+#stopka
+{
+    height: 150px;
+    float: left;
+    width: 960px;
+
+}
+
+#autor
+{
+    float: left;
+}
+
+#data-modyfikacji, #biezaca-data, #czas
+{
+    text-align: right;
+}
+
+#tresc > img
+{
+    height: 260px;
+    width: 480px;
+    margin-left: 40px;
+}
+
+#tresc > p {
+    width: 30%;
+    font-size: 7.5pt;
+    float: left;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klimaty Ziemi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="glowka">
+        <img src="obrazy/logo.gif" alt="logo" id="logo">
+        <div id="banner">
+            <img src="obrazy/banner.png" alt="bannerZdjecie" id="bannerZdjecie">
+            <div id="bannerTekst"><h1>Klimaty Ziemi</h1></div>
+        </div>
+        <form action="" id="logowanie">
+            <h3>Logowanie</h3>
+            <label for="user">Użytkownik:</label><br>
+            <input type="text" id="user" name="user" size="10">
+            <br>
+            <label for="password">Hasło:</label><br>
+            <input type="password" id="password" name="password" size="10"><br>
+            <input type="submit" value="Zaloguj">
+        </form>
+    </div>
+    <div class="boczne">
+        <nav>
+            <h3>MENU</h3>
+            <a href="index.html">Strona główna</a><br>
+            <a href="logowanie.html">Logowanie</a><br>
+            <a href="#">Podstrona 1.</a><br>
+            <a href="#">Podstona 2.</a><br>
+        </nav>
+    </div>
+    <div id="tresc">
+        <h2>Definicja Klimatu</h2>
+        <img src="obrazy/slider.gif" alt="slider" id="slider">
+        <p>Klimat – ogół zjawisk pogodowych na danym obszarze w okresie wieloletnim. Ustalany jest na podstawie wieloletnich obserwacji różnorodnych składników, najczęściej pomiarów temperatury, opadów atmosferycznych i wiatru.</p>
+        <p>Klimat określany jest na podstawie wieloletnich obserwacji pogody dla danego regionu. Klimat jest jednym z czynników ekologicznych wpływających na występowanie i życie organizmów. </p>
+        <p>Klimat na Ziemi kształtują trzy podstawowe procesy klimatotwórcze: obieg ciepła, obieg wody i krążenie powietrza, oraz czynniki geograficzne: układ lądów i oceanów, wysokość n.p.m.</p>
+    </div>
+    <div class="boczne" id="prawy">
+        <a href="https://pl.wikipedia.org/wiki/Klimat">
+            <img src="obrazy/wikipedia.png" alt="wikipedia"><br>
+        </a>
+        <a href="http://www.wiking.edu.pl/article.php?id=30">
+            <img src="obrazy/wiking_logo.gif" alt="wiking"><br>
+        </a>
+        <a href="http://www.klimatyziemi.cba.pl/">
+            <img src="obrazy/klimatyZiemi.png" alt="klimatyziemi"><br>
+        </a>
+    </div>
+    <div id="stopka">
+        <p id="autor">
+            Jan Korniak 4A 10
+        </p>
+        <p id="data-modyfikacji">Data ostatniej modyfikacji:</p>
+        <p id="biezaca-data">Bieżąca data: </p>
+        <p id="czas">Czas aktualny: </p>
+    </div>
+
+    <script>
+        const dataModyfikacji = new Date(document.lastModified);
+
+        stopkaTekst = document.getElementById('data-modyfikacji');
+
+        stopkaTekst.textContent += dataModyfikacji.getDate() + '.'+ (dataModyfikacji.getMonth() + 1) + '.'+dataModyfikacji.getFullYear();
+
+        let biezacaData = new Date()
+
+        stopkaTekstData = document.getElementById('biezaca-data')
+
+        stopkaTekstData.textContent += biezacaData.getDate() + " "
+        
+
+        switch ((biezacaData.getMonth() + 1)) {
+            case 1:
+                stopkaTekstData.textContent += "Styczeń"
+                break;
+            case 2:
+                stopkaTekstData.textContent += "Luty"
+                break;
+            case 3:
+                stopkaTekstData.textContent += "Marzec"
+                break;
+            case 4:
+                stopkaTekstData.textContent += "Kwiecień"
+                break;
+            case 5:
+                stopkaTekstData.textContent += "Maj"
+                break;
+            case 6:
+                stopkaTekstData.textContent += "Czerwiec"
+                break;
+            case 7:
+                stopkaTekstData.textContent += "Lipiec"
+                break;
+            case 8:
+                stopkaTekstData.textContent += "Sierpień"
+                break;
+            case 9:
+                stopkaTekstData.textContent += "Wrzesień"
+                break;
+            case 10:
+                stopkaTekstData.textContent += "Paździenik"
+                break;
+            case 11:
+                stopkaTekstData.textContent += "Listopad"
+                break;
+            case 12:
+                stopkaTekstData.textContent += "Grudzień"
+                break;
+        
+            default:
+                break;
+        }
+        stopkaTekstData.textContent += " " + biezacaData.getFullYear()
+        czas = document.getElementById('czas'); 
+        setInterval(() => {
+            const czasHawkTuahlny = new Date()
+            czas.textContent = "Czas aktualny: "+ czasHawkTuahlny.toLocaleTimeString()
+        }, 1000);
+
+        document.getElementById('logowanie').addEventListener('submit', (e) =>{
+            e.preventDefault()
+            const user = document.getElementById('user')
+            const password = document.getElementById('password')
+
+            if (user.value == 'user' && password.value == 'user') {
+                alert("Zalogowano pomyślnie")
+                window.location = "logowanie.html"
+            }
+            else
+            {
+                alert("Błędny użytkownik lub hasło!")
+            }
+        })
+    </script>
+</body>
+</html>
