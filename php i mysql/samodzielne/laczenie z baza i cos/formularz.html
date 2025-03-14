@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+</head>
+<body>
+    <form action="login.php" method="get">
+        <input type="text" id="login" name="login"><br>
+        <input type="text" id="haslo" name="haslo"><br>
+        <input type="submit" value="Zaloguj">
+    </form>
+    <button id="rejestracja">Rejestracja</button>
+    <script>
+        document.getElementById('rejestracja').addEventListener('click', ()=>{window.location.href = 'rejestracja.html'})
+    </script>
+</body>
+</html>

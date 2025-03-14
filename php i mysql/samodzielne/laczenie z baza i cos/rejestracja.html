@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rejestracja</title>
+</head>
+<body>
+    <form action="registration.php" method="get">
+        <input type="text" id="login" name="login"><br>
+        <input type="text" id="haslo" name="haslo"><br>
+        <input type="submit" value="Zarejestruj się">
+    </form>
+    <button id="powrot">Powrót na strone główną</button>
+    <script>
+        document.getElementById('powrot').addEventListener('click', ()=>{window.location.href = 'index.php'})
+    </script>
+</body>
+</html>
