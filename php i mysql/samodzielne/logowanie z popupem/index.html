@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logowanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <input type="button" onclick="document.getElementById('blok-login').style.display='block';document.getElementById('blok-rejestracja').style.display='none'" style="width:auto;" value="Logowanie"></input>
+    <input type="button" onclick="document.getElementById('blok-rejestracja').style.display='block';document.getElementById('blok-login').style.display='none'" style="width:auto;" value="Rejestracja"></input>
+
+    <div id="blok-login">
+        <div id="blok-formularz">
+            <h2>Logowanie</h2>
+            <span onclick="document.getElementById('blok-login').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form action="logowanie.php" method="post">
+                <h3>Login:</h3>
+                <input type="text" name="login"><br>
+                <h3>Hasło:</h3>
+                <input type="password" name="haslo" id="haslo"><br><br>
+                <input type="checkbox" name="pamietaj" id="pamietaj"><label for="pamietaj">Pamiętaj mnie</label><br><br>
+                <input type="submit" value="Zaloguj">
+            </form>
+        </div>
+    </div>
+    <div id="blok-rejestracja">
+        <div id="blok-formularz">
+            <h2>Rejestracja</h2>
+            <span onclick="document.getElementById('blok-rejestracja').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form action="rejestracja.php" method="post">
+                <h3>Login:</h3>
+                <input type="text" name="login"><br>
+                <h3>Hasło:</h3>
+                <input type="password" name="haslo" id="haslo"><br>
+                <h3>Powtórz hasło:</h3>
+                <input type="password" name="haslo" id="haslo"><br><br>
+                <input type="submit" value="Zaloguj">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
