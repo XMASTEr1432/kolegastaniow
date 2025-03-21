@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_skrypty3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <header>
+            <h1>SKRYPTY JAVASCRIPT I PHP</h1>
+        </header>
+        <aside>
+            <h3>MENU 1</h3>
+            <nav>
+                <button onclick="window.location = ''">Strona 1</button><br>
+                <button onclick="window.location = ''">Strona 2</button><br>
+                <button onclick="window.location = ''">Strona 3</button><br>
+            </nav>
+            <h3>MENU 2</h3>
+            <nav>
+                <a href="">Strona 1</a><br>
+                <a href="">Strona 2</a><br>
+                <a href="">Strona 3</a><br>
+            </nav>
+        </aside>
+        <section>
+            <h2>SKRYPYT JAVASCRIPT</h2>
+            <article>
+                <h3>JEDNOSTKI MIARY</h3>
+                <input type="text" size="5" id="liczba-przeliczenie">Wpisz liczbę<br>
+                <span id="blad1"></span>
+                <input type="button" value="Przelicz na CM" id="cm">
+                <input type="button" value="Przelicz na CALE" id="cal">
+                <input type="text" readonly size="5" id="wynik1">
+            </article>
+            <article>
+                <h3>SYSTEMY LICZBOWE</h3>
+                <form action="" id="systemy-liczbowe">
+                    <input type="text" size="5" id="liczvaSystem">Wpisz liczbę
+                    <span id="blad2"></span>
+                    <select name="z" id="z">
+                        <option value="default">Wybierz system do przelicznia na</option>
+                        <option value="2">dwójkowy</option>
+                        <option value="8">ósemkowy</option>
+                        <option value="10">decymalny</option>
+                        <option value="16">heksadecymalny</option>
+                    </select>
+                    <select name="na" id="na">
+                        <option value="default">Wybierz system do przelicznia na</option>
+                        <option value="2">dwójkowy</option>
+                        <option value="8">ósemkowy</option>
+                        <option value="10">decymalny</option>
+                        <option value="16">heksadecymalny</option>
+                    </select>
+                    <input type="submit" value="Zamień">
+                </form>
+                <p id="wynik2"></p>
+            </article>
+            <article>
+                <h3>FUNKCJA POLE TRÓJKĄTA I OBWÓD</h3>
+                <form action="" id="pole-obwod">
+                    <input type="text" size="3" id="bok1">Bok 1 (Podstawa)
+                    <span id="bok1-blad"></span>
+                    <input type="text" size="3" id="bok2">Bok 2
+                    <span id="bok2-blad"></span>
+                    <input type="text" size="3" id="bok3">Bok 3
+                    <span id="bok3-blad"></span><br>
+                    <input type="text" size="3" id="wysokosc">Wysokość
+                    <span id="wysokosc-blad"></span><br>
+                    <input type="submit" value="Oblicz">
+                </form>
+                <p id="wynik3">Pole trójkąta wynosi: Obwód trójkąta wynosi:</p>
+            </article>
+        </section>
+        <aside>
+            <nav>
+                <a href="zstie.edu.pl"><img src="obrazy/zstie.jfif" alt="zstie"></a> 
+                <a href="wroclaw.pl"><img src="obrazy/wroclaw.png" alt="wroclaw"></a> 
+                <a href="oke.wroc.pl"><img src="obrazy/oke.svg" alt="oke wroclaw"></a> 
+            </nav>
+        </aside>
+        <footer>
+            <script>
+                document.write(Date() + '<br>')
+                document.write(document.lastModified + '<br>')
+                document.write(document.location.href + '<br>')
+                document.write(window.screen.width + 'x' + screen.height + '<br>')
+                document.write(navigator.appName + '<br>')
+
+            </script>
+        </footer>
+    </main>
+    <script>
+        
+
+        document.getElementById('cm').addEventListener("click", ()=>{
+            let liczbaPrzelicznie = document.getElementById('liczba-przeliczenie')
+            if (liczbaPrzelicznie.value != '' && !isNaN(liczbaPrzelicznie.value)) {
+                document.getElementById('wynik1').value = liczbaPrzelicznie.value / 2.5
+                document.getElementById('blad1').innerHTML = ''
+            }
+            else
+            {
+                document.getElementById('blad1').innerHTML = '* Podana wartość nie jest liczbą'
+            }
+        })
+        document.getElementById('cal').addEventListener("click", ()=>{
+            let liczbaPrzelicznie = document.getElementById('liczba-przeliczenie')
+            if (liczbaPrzelicznie.value != '' && !isNaN(liczbaPrzelicznie.value)) {
+                document.getElementById('wynik1').value = liczbaPrzelicznie.value * 2.5
+                document.getElementById('blad1').innerHTML = ''
+            }
+            else
+            {
+                document.getElementById('blad1').innerHTML = '* Podana wartość nie jest liczbą'
+            }
+        })
+
+        onload = () =>
+        {
+            alert('Proszę wypełnić formularz!')
+        }
+
+        function trojkatPoleObwod(){
+            let bok1 = document.getElementById('bok1').value
+            let bok2 = document.getElementById('bok2').value
+            let bok3 = document.getElementById('bok3').value
+            let wysokosc = document.getElementById('wysokosc').value
+            let blad = false
+
+            
+
+            if (bok1 == '' || isNaN(bok1) || bok1 < 0) {
+                document.getElementById('bok1-blad').innerHTML = '* Podana wartość nie jest liczbą'
+                if (bok1 < 0) {
+                    document.getElementById('bok1-blad').innerHTML = '* Podana wartość jest mniejsza od zera'
+                }
+                blad = true
+            }
+            if (bok2 == '' || isNaN(bok2) || bok2 < 0) {
+                document.getElementById('bok2-blad').innerHTML = '* Podana wartość nie jest liczbą'
+                if (bok2 < 0) {
+                    document.getElementById('bok2-blad').innerHTML = '* Podana wartość jest mniejsza od zera'
+                }
+                blad = true
+            }
+            if (bok3 == '' || isNaN(bok3) || bok3 < 0) {
+                document.getElementById('bok3-blad').innerHTML = '* Podana wartość nie jest liczbą'
+                if (bok3 < 0) {
+                    document.getElementById('bok3-blad').innerHTML = '* Podana wartość jest mniejsza od zera'
+                }
+                blad = true
+            }
+            if (wysokosc == '' || isNaN(wysokosc) || wysokosc < 0) {
+                document.getElementById('wysokosc-blad').innerHTML = '* Podana wartość nie jest liczbą'
+                if (wysokosc < 0) {
+                    document.getElementById('wysokosc-blad').innerHTML = '* Podana wartość jest mniejsza od zera'
+                }
+                blad = true
+            }
+
+            if (blad != true) {
+                let sprawdzenie = Math.max(bok1, bok2, bok3)
+
+                if (sprawdzenie == bok1)
+                {
+                    sprawdznie = 1
+                }
+                if (sprawdzenie == bok2)
+                {
+                    sprawdznie = 2
+                }
+                if (sprawdzenie == bok3)
+                {
+                    sprawdznie = 3
+                }
+
+                switch (sprawdzenie) {
+                    case 1:
+                        if (bok1 < bok2 + bok3) {
+                            document.getElementById('wynik3').innerHTML = 'Pole trójkąta wynosi: ' + bok1 / 2 * wysokosc + ' Obwód trójkąta wynosi: ' + (Number(bok1) + Number(bok2) + Number(bok3))
+                        }
+                        else 
+                        {
+                            document.getElementById('wynik3').innerHTML = '<span>Aby z trzech odcinków zbudować trójkąt, najdłuższy z nich musi być krótszy niż suma długość dwóch pozostałyc</span>'
+                        }
+                        break;
+                    case 2:
+                        if (bok2 < bok1 + bok3) {
+                            document.getElementById('wynik3').innerHTML = 'Pole trójkąta wynosi: ' + bok1 / 2 * wysokosc + ' Obwód trójkąta wynosi: ' + (Number(bok1) + Number(bok2) + Number(bok3))
+                        }
+                        else 
+                        {
+                            document.getElementById('wynik3').innerHTML = '<span>Aby z trzech odcinków zbudować trójkąt, najdłuższy z nich musi być krótszy niż suma długość dwóch pozostałyc</span>'
+                        }
+                        break;
+                    case 3:
+                        if (bok3 < bok2 + bok1) {
+                            document.getElementById('wynik3').innerHTML = 'Pole trójkąta wynosi: ' + bok1 / 2 * wysokosc + ' Obwód trójkąta wynosi: ' + (Number(bok1) + Number(bok2) + Number(bok3))
+                        }
+                        else 
+                        {
+                            document.getElementById('wynik3').innerHTML = '<span>Aby z trzech odcinków zbudować trójkąt, najdłuższy z nich musi być krótszy niż suma długość dwóch pozostałyc</span>'
+                        }
+                        break;
+                
+                    default:
+                        break;
+                }
+            }
+            
+        }
+
+        document.getElementById('pole-obwod').addEventListener('submit', function(formularz){
+            formularz.preventDefault()
+            trojkatPoleObwod()
+        })
+
+        document.getElementById('systemy-liczbowe').addEventListener('submit', (event)=>
+        {
+            event.preventDefault()
+            let liczba = document.getElementById('liczvaSystem').value
+            let z = document.getElementById('z').value
+            let na = document.getElementById('na').value
+
+            wynik2 = document.getElementById('wynik2')
+            
+            if (liczba == '' || isNaN(liczba)) {
+                document.getElementById('blad2').innerHTML = '* Pole nie jest liczbą lub jest puste'
+            }
+            else 
+            {
+                document.getElementById('blad2').innerHTML = ''
+                wynik2.innerHTML = 'Wynik to: ' + parseInt(liczba, Number(z)).toString(Number(na))
+            }
+        })
+    </script>
+</body>
+</html>

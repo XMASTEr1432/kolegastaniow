@@ -1,0 +1,123 @@
+body
+{
+    background-color: beige;
+    min-height: 720px;
+}
+
+main
+{
+    width: 960px;
+    margin: 0 auto;
+}
+
+section
+{
+    height: 400px;
+}
+
+section:nth-of-type(1)
+{
+    background-color: rgb(170, 255, 0);
+    margin-top: -24px;
+}
+
+article
+{
+    float: left;
+    width: 30%;
+    overflow: hidden;
+    background-color: rgb(93, 158, 180);
+    margin-right: 1%;
+    margin-left: 2%;
+    color: rgb(117, 117, 117);
+    height: 300px;
+}
+
+table, td
+{
+    border: 1px solid blue;
+    border-collapse: collapse;
+    background-color: lavender;
+}
+table
+{
+    width: 100%;
+    text-align: center;
+}
+td
+{
+    padding: 20px;
+}
+
+#szachownica
+{
+    background-color: lavender;
+    height: 300px;
+}
+
+#szachownica > article
+{
+    width: 15%;
+    margin: 0;
+    color: black;
+    background-color: paleturquoise;
+    height: 120px;
+    font-size: 10pt;
+}
+
+#szachownica > article:nth-of-type(1), #szachownica > article:nth-of-type(3), #szachownica > article:nth-of-type(5), #szachownica > article:nth-of-type(7), #szachownica > article:nth-of-type(9)
+{
+    background-color: blue;
+    color: white;
+}
+
+#szachownica > article:first-of-type
+{
+    margin-left: 15%;
+}
+#szachownica > article:nth-of-type(6)
+{
+    margin-left: 15%;
+}
+
+section:last-of-type
+{
+    background-color: powderblue;
+}
+
+section:nth-of-type(2) > article
+{
+    background-color: lavenderblush;
+}
+
+section:nth-of-type(2) > article:first-of-type
+{
+    background-color: violet;
+    color: black;
+}
+
+h4
+{
+    text-align: center;
+}
+
+aside
+{
+    float: left;
+}
+
+aside > a > img
+{
+    width: 5%;
+    position: absolute;
+    float: right;
+    margin-left: 80%;
+}
+aside > a > img:last-of-type
+{
+    width: 2.5%;
+    position: absolute;
+    float: right;
+    margin-left: 78%;
+    margin-top: 5%;
+}

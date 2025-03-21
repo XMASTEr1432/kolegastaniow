@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_tablice2</title>
+</head>
+<body>
+    <h1>Tablice dwuwymiarowe</h1>
+    <hr>
+    <h3 id="liczba-punktow"></h3>
+    <script>
+        let pytania = [
+            ['Ile księzyców ma Ziemia?', 1],
+            ['Ile księżyców ma Saturn?', 274],
+            ['Ile księżyców ma Wenus?', 0]
+        ]
+
+        let poprawneOdpowiedzi = 0
+        odpowiedz = new Array
+        odpowiedz[0] = prompt(pytania[0][0])
+        if (odpowiedz[0] == pytania[0][1] && odpowiedz[0] != '') {
+            poprawneOdpowiedzi += 1
+            alert("Świetnie! Poprawna odpowiedź to: " + pytania[0][1])
+        }
+        else
+        {
+            alert("Błędna odpowiedź! Poprawna odpowiedź to: "+ pytania[0][1])
+        }
+        odpowiedz[1] = prompt(pytania[1][0])
+        if (odpowiedz[1] == pytania[1][1] && odpowiedz[1] != '') {
+            poprawneOdpowiedzi += 1
+            alert("Świetnie! Poprawna odpowiedź to: " + pytania[1][1])
+        }
+        else
+        {
+            alert("Błędna odpowiedź! Poprawna odpowiedź to: "+ pytania[1][1])
+        }
+        odpowiedz[2] = prompt(pytania[2][0])
+        if (odpowiedz[2] == pytania[2][1] && odpowiedz[2] != '') {
+            poprawneOdpowiedzi += 1
+            alert("Świetnie! Poprawna odpowiedź to: " + pytania[2][1])
+        }
+        else
+        {
+            alert("Błędna odpowiedź! Poprawna odpowiedź to: "+ pytania[2][1])
+        }
+
+        document.getElementById('liczba-punktow').innerHTML = 'Liczba poprawnych odpowiedzi: '+poprawneOdpowiedzi+'/'+pytania.length
+        
+    </script>
+    <hr>
+</body>
+</html>
