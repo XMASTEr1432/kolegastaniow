@@ -1,0 +1,47 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#blok-login, #blok-rejestracja
+{
+    display: none;
+    width: 100%;
+    position: fixed;
+    color: white;
+
+}
+
+span {
+    font-size: 80pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#blok-formularz
+{
+    text-align: center;
+    padding-top: 100px;
+    margin: 5% auto 15% auto;
+    width: 80%;
+    position: relative;
+    background-color: seagreen;
+    padding-bottom: 100px;
+}
+input[type=submit], input[type=button]
+{
+    border: 1px solid seagreen;
+    background-color: white;
+    color: seagreen;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bolder;
+    font-size: 18pt;
+}
+
+h2
+{
+    color: red;
+}
