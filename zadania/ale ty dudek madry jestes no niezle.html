@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js_skrypty4</title>
+</head>
+<body>
+	Strona zależna od rodzielczości (wymiarów) ekranu: instrukcje warunkowe i BOM/DOM <br>
+	Szerokość ekranu: <span id="wynik"></span>
+    <script>
+    
+        let rodzielczosc = window.innerWidth; 
+        if (rodzielczosc < 640) {
+            rodzielczosc = 'do 640px'
+        }
+        if (800 > rodzielczosc && rodzielczosc > 640) {
+            rodzielczosc = '640-800px'
+        }
+        if (1024 > rodzielczosc && rodzielczosc > 800) {
+            rodzielczosc = '800-1024px'
+        }
+        if (rodzielczosc > 1024) {
+            rodzielczosc = '>1024px'
+        }
+        document.getElementById('wynik').innerHTML = rodzielczosc
+        window.addEventListener('resize', ()=>{
+            let rodzielczosc = window.innerWidth; 
+            if (rodzielczosc < 640) {
+                rodzielczosc = 'do 640px'
+            }
+            if (800 > rodzielczosc && rodzielczosc > 640) {
+                rodzielczosc = '640-800px'
+            }
+            if (1024 > rodzielczosc && rodzielczosc > 800) {
+                rodzielczosc = '800-1024px'
+            }
+            if (rodzielczosc > 1024) {
+                rodzielczosc = '>1024px'
+            }
+            document.getElementById('wynik').innerHTML = rodzielczosc
+        })
+    </script>
+    
+    <h1>Polecenia</h1>
+    <h3>Powitanie zgodne z porą dnia: operator warunkowy/instrukcja warunkowa i obiekt Date()</h3>
+    <script>
+        let poraDnia = new Date()
+        if (poraDnia.getHours() >= 6 && poraDnia.getHours() <= 18) {
+            document.write('Dzień dobry')
+        }
+        else 
+        {
+            document.write('Dobry wieczór')
+        }
+    </script>
+    <hr>
+    <h3>Zegar umieszczony w pasku tytułu: obiekt Date() i BOM/DOM</h3>
+    <script>
+        setInterval(function(){
+            let czas = new Date()
+            document.title = czas.toLocaleTimeString()
+            }, 1000)
+    </script>
+    <hr>
+    <h3>Zmieniające się losowo banery: grafika, obiekt Math() i obiekt Date()</h3>
+    <script>
+        setInterval(()=>{
+            const obrazy = [
+                "<img src='banner1.png' alt='banner1'>",
+                "<img src='banner2.png' alt='banner2'>",
+                "<img src='banner3.png' alt='banner3'>"
+            ]
+            let obrazLosowanie = Math.floor((Math.random() * 3) + 1);
+            document.getElementById("obrazy").innerHTML = obrazy[obrazLosowanie - 1]
+        }, 1000)
+    </script>
+    <div id="obrazy">
+        <img src="banner1.png" alt="banner1-placeholder">
+    </div>
+    <hr>
+    <h3>Tekst pływający po ekranie w lewo, uwzględniający rozmiar pola tekstowego: obiekt String()</h3>
+    <input type="text" id='tekst' max="60" readonly>
+    <script>
+        setInterval(function () {
+            dlugosc = document.getElementById('tekst').value.length
+            if (dlugosc == 0) {
+                document.getElementById('tekst').value = '                                              Ala ma kota...'
+            }else 
+            {
+                tekst = document.getElementById('tekst').value
+                document.getElementById('tekst').value = tekst.slice(1, dlugosc)
+            }
+        }, 40)        
+    </script>
+    <hr>
+    <h3>Skrypt, który odczytuje dzień tygodnia z daty systemowej, a następnie wyświetla jedno z tzw. praw Murphe'go dla każdego dnia inne: instrukcja switch case i obiekt Date()</h3>
+    <script>
+        let dzienTygodnia = new Date()
+
+        dzienTygodnia = dzienTygodnia.getDay()
+
+        switch(dzienTygodnia){
+            case 1:
+                document.write("Jeżeli coś moze się popsuć, to z pewnoscią się popsuje.")
+                break;
+            case 2:
+                document.write("Jeżeli coś może się popsuć w wielu miejscach, to pierwsze uszkodzenie wystąpi tam, gdzie wyrządzi najwięcej szkody.")
+                break;
+            case 3:
+                document.write("Jeżeli przewidziałeś cztery możliwe awarie i zabezpieczyłeś się przed nimi, to natychmiast wydarzy się piąta, na która nie byłeś przygotowany.")
+                break;
+            case 4: 
+                document.write("Sprawy pozostawione sobie samym zmieniają się ze złych na gorsze.")
+                break;
+            case 5: 
+                document.write("Jeżeli wydaje się, że wszystko działa dobrze, to znaczy, ze coś przeoczyłeś.")
+                break;
+            case 6: 
+                document.write("Wymiary będą zawsze podane w najmniej użytecznych jednostkach.")
+                break;
+            case 7:
+                document.write("Każdy przewód przycięty na długosc okaże się za krótki.")
+                break;
+            default:
+                document.write('Dzień tygodnia wyższy od 7?')
+                break;
+        }
+    </script>
+    <hr>
+</body>
+</html>
