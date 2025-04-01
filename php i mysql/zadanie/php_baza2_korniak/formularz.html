@@ -1,0 +1,34 @@
+<form action="" method="post">
+    zwierzę: <input type="text" name="zwierze" id="zwierze" required><br>
+    imie: <input type="text" name="imie" id="imie"><br>
+    wiek: <input type="text" name="wiek" id="wiek" size="2" maxlength="2"><br>
+    kolor: <input type="text" name="kolor" id="kolor"><br>
+    waga: <input type="text" name="waga" id="waga" size="3" maxlength="3"><br>
+    <input type="submit" value="Wyślij">
+</form>
+<a href='index.php?wyloguj=1'>Wyloguj</a>
+<br>
+<hr>
+<form action="" method="get">
+    Usuń rekord wg zwierzęcia: <br>
+    Nazwa zwierzęcia: <input type="text" name="usun" id="usun"> <input type="submit" value="Usuń">
+</form>
+<hr>
+<form action="" method="get">
+    Wyszukaj wg kryteriów: <br>
+    <select name="kryteria" id="kryteria">
+        <option value="default">kryteria</option>
+        <option value="wagamniejsza">waga mniejsza niż 100</option>
+        <option value="wagawieksza">waga większa niż 100</option>
+        <option value="wiekwiekszy">wiek wiekszy od 5</option>
+        <option value="wiekmniejszy">wiek mniejszy od 5</option>
+        <option value="zwierze">zwierze</option>
+        <option value="imie">imie</option>
+        <option value="wiek">wiek</option>
+        <option value="kolor">kolor</option>
+        <option value="waga">waga</option>
+    </select><br>
+    Wpisz wartość aby wyszukać w wybranym polu lub pozostaw puste aby sortować rosnąco: <input type="text" name="wartosc" id="wartosc">
+    <input type="submit" value="Wyszukaj">
+</form>
+<hr>
